@@ -1,0 +1,26 @@
+test execution commands
+
+type into the terminal
+
+to execute one test
+"robot tests/test_1.robot"
+
+to execute all tests from the folder:
+"robot tests"
+
+to execute multiple tests:
+"robot tests/test_1.robot tests/test_2.robot
+
+to execute all tests in a random order:
+"robot --randomize ALL tests
+
+to execute all tests that match a tag:
+"robot --randomize ALL -i regression tests"
+
+to execute all tests that match multiple tags:
+"robot --randomize ALL -i tag1ANDtag2 tests"
+between tag1 and tag 2 AND/OR can be used, no spaces required
+
+to save logs add the following command "--loglevel INFO"
+"robot --randomize ALL --loglevel INFO tests"
+types of log levels from least to most detailed: INFO, DEBUG, TRACE

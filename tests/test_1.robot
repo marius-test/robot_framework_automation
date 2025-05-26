@@ -8,4 +8,5 @@ Library    OperatingSystem
 
 *** Test Cases ***
 TEST1
+    [Tags]    sanity
     Log    Hello World!
