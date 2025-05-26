@@ -7,5 +7,5 @@ Library    OperatingSystem
 *** Variables ***
 
 *** Test Cases ***
-TEST
+TEST1
     Log    Hello World!

@@ -1,26 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-26T14:19:43.089068" rpa="false" schemaversion="5">
-<suite id="s1" name="Test 1" source="C:\Users\marius\python_robot_framework\tests\test_1.robot">
-<test id="s1-t1" name="TEST" line="10">
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-26T14:32:22.775108" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Suite" source="C:\Users\marius\python_robot_framework\tests\test_suite.robot">
+<test id="s1-t1" name="TEST1" line="5">
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-05-26T14:19:43.119701" level="INFO">This is a sample test case</msg>
-<arg>This is a sample test case</arg>
+<msg time="2025-05-26T14:32:22.803500" level="INFO">Hello World!</msg>
+<arg>Hello World!</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-26T14:19:43.119581" elapsed="0.000173"/>
+<status status="PASS" start="2025-05-26T14:32:22.803369" elapsed="0.000185"/>
 </kw>
-<status status="PASS" start="2025-05-26T14:19:43.118986" elapsed="0.000927"/>
+<status status="PASS" start="2025-05-26T14:32:22.802741" elapsed="0.000969"/>
 </test>
-<doc>this is my first test case in robot framework</doc>
-<status status="PASS" start="2025-05-26T14:19:43.090348" elapsed="0.029962"/>
+<test id="s1-t2" name="TEST2" line="8">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-26T14:32:22.804348" level="INFO">Hello Again!</msg>
+<arg>Hello Again!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-26T14:32:22.804251" elapsed="0.000135"/>
+</kw>
+<status status="PASS" start="2025-05-26T14:32:22.804024" elapsed="0.000481"/>
+</test>
+<status status="PASS" start="2025-05-26T14:32:22.776237" elapsed="0.028645"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Test 1" id="s1" pass="1" fail="0" skip="0">Test 1</stat>
+<stat name="Test Suite" id="s1" pass="2" fail="0" skip="0">Test Suite</stat>
 </suite>
 </statistics>
 <errors>
