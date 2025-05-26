@@ -1,34 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-26T14:32:22.775108" rpa="false" schemaversion="5">
-<suite id="s1" name="Test Suite" source="C:\Users\marius\python_robot_framework\tests\test_suite.robot">
-<test id="s1-t1" name="TEST1" line="5">
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-26T16:08:01.969322" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\marius\python_robot_framework\tests">
+<suite id="s1-s1" name="Test 1" source="C:\Users\marius\python_robot_framework\tests\test_1.robot">
+<test id="s1-s1-t1" name="TEST1" line="10">
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-05-26T14:32:22.803500" level="INFO">Hello World!</msg>
+<msg time="2025-05-26T16:08:01.998162" level="INFO">Hello World!</msg>
 <arg>Hello World!</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-26T14:32:22.803369" elapsed="0.000185"/>
+<status status="PASS" start="2025-05-26T16:08:01.998046" elapsed="0.000166"/>
 </kw>
-<status status="PASS" start="2025-05-26T14:32:22.802741" elapsed="0.000969"/>
+<status status="PASS" start="2025-05-26T16:08:01.997456" elapsed="0.000906"/>
 </test>
-<test id="s1-t2" name="TEST2" line="8">
+<doc>This is my first test case in robot framework.</doc>
+<status status="PASS" start="2025-05-26T16:08:01.991934" elapsed="0.006811"/>
+</suite>
+<suite id="s1-s2" name="Test 2" source="C:\Users\marius\python_robot_framework\tests\test_2.robot">
+<test id="s1-s2-t1" name="TEST2" line="5">
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-05-26T14:32:22.804348" level="INFO">Hello Again!</msg>
+<msg time="2025-05-26T16:08:02.000684" level="INFO">Hello Again!</msg>
 <arg>Hello Again!</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-26T14:32:22.804251" elapsed="0.000135"/>
+<status status="PASS" start="2025-05-26T16:08:02.000588" elapsed="0.000137"/>
 </kw>
-<status status="PASS" start="2025-05-26T14:32:22.804024" elapsed="0.000481"/>
+<status status="PASS" start="2025-05-26T16:08:02.000327" elapsed="0.000527"/>
 </test>
-<status status="PASS" start="2025-05-26T14:32:22.776237" elapsed="0.028645"/>
+<status status="PASS" start="2025-05-26T16:08:01.999128" elapsed="0.002055"/>
+</suite>
+<suite id="s1-s3" name="Test Suite" source="C:\Users\marius\python_robot_framework\tests\test_suite.robot">
+<test id="s1-s3-t1" name="TEST2" line="8">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-26T16:08:02.003311" level="INFO">Hello Again!</msg>
+<arg>Hello Again!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-26T16:08:02.003216" elapsed="0.000141"/>
+</kw>
+<status status="PASS" start="2025-05-26T16:08:02.002962" elapsed="0.000534"/>
+</test>
+<test id="s1-s3-t2" name="TEST1" line="5">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-26T16:08:02.004167" level="INFO">Hello World!</msg>
+<arg>Hello World!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-26T16:08:02.004086" elapsed="0.000112"/>
+</kw>
+<status status="PASS" start="2025-05-26T16:08:02.003841" elapsed="0.000468"/>
+</test>
+<test id="s1-s3-t3" name="TEST3" line="11">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-26T16:08:02.004853" level="INFO">Hello Once Again!</msg>
+<arg>Hello Once Again!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-26T16:08:02.004783" elapsed="0.000102"/>
+</kw>
+<status status="PASS" start="2025-05-26T16:08:02.004589" elapsed="0.000408"/>
+</test>
+<status status="PASS" start="2025-05-26T16:08:02.001624" elapsed="0.003717"/>
+</suite>
+<suite id="s1-s4" name="Test 3" source="C:\Users\marius\python_robot_framework\tests\test_3.robot">
+<test id="s1-s4-t1" name="TEST3" line="5">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-26T16:08:02.007290" level="INFO">Hello Once Again!</msg>
+<arg>Hello Once Again!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-26T16:08:02.007222" elapsed="0.000104"/>
+</kw>
+<status status="PASS" start="2025-05-26T16:08:02.007005" elapsed="0.000437"/>
+</test>
+<status status="PASS" start="2025-05-26T16:08:02.005767" elapsed="0.002018"/>
+</suite>
+<meta name="Randomized">Suites and tests (seed 4782496827381597157)</meta>
+<status status="PASS" start="2025-05-26T16:08:01.970464" elapsed="0.037857"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="6" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Test Suite" id="s1" pass="2" fail="0" skip="0">Test Suite</stat>
+<stat name="Tests" id="s1" pass="6" fail="0" skip="0">Tests</stat>
+<stat name="Test 1" id="s1-s1" pass="1" fail="0" skip="0">Tests.Test 1</stat>
+<stat name="Test 2" id="s1-s2" pass="1" fail="0" skip="0">Tests.Test 2</stat>
+<stat name="Test Suite" id="s1-s3" pass="3" fail="0" skip="0">Tests.Test Suite</stat>
+<stat name="Test 3" id="s1-s4" pass="1" fail="0" skip="0">Tests.Test 3</stat>
 </suite>
 </statistics>
 <errors>
