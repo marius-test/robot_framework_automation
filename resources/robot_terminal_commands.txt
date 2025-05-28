@@ -24,3 +24,7 @@ between tag1 and tag 2 AND/OR can be used, no spaces required
 to save logs add the following command "--loglevel INFO"
 "robot --randomize ALL --loglevel INFO tests"
 types of log levels from least to most detailed: INFO, DEBUG, TRACE
+
+to save the logs in a specific folder use the following command
+"robot -d output -i sanityORregression --loglevel TRACE tests"
+"output" is the name of the folder
