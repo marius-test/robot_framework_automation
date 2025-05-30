@@ -1,28 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-30T15:35:02.851679" rpa="false" schemaversion="5">
-<suite id="s1" name="Test 1" source="C:\Users\marius\python_robot_framework\tests\test_1.robot">
-<test id="s1-t1" name="TEST1" line="11">
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-30T17:31:43.708223" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\marius\python_robot_framework\tests">
+<suite id="s1-s1" name="Test 1" source="C:\Users\marius\python_robot_framework\tests\test_1.robot">
+<test id="s1-s1-t1" name="TEST1" line="14">
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-05-30T15:35:02.882394" level="INFO">['dolorem ipsum dolor sit amet...']</msg>
-<arg>${my_variable}</arg>
+<msg time="2025-05-30T17:31:43.737988" level="TRACE">Arguments: [ 'dolorem ipsum dolor sit amet' ]</msg>
+<msg time="2025-05-30T17:31:43.738075" level="INFO">dolorem ipsum dolor sit amet</msg>
+<msg time="2025-05-30T17:31:43.738107" level="TRACE">Return: None</msg>
+<arg>${test_1_variable_1}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-30T15:35:02.882252" elapsed="0.000192"/>
+<status status="PASS" start="2025-05-30T17:31:43.737869" elapsed="0.000271"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-30T17:31:43.738399" level="TRACE">Arguments: [ 'consectetur adipiscing elit' ]</msg>
+<msg time="2025-05-30T17:31:43.738447" level="INFO">consectetur adipiscing elit</msg>
+<msg time="2025-05-30T17:31:43.738471" level="TRACE">Return: None</msg>
+<arg>${test_1_variable_2}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-30T17:31:43.738311" elapsed="0.000184"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-30T17:31:43.738697" level="TRACE">Arguments: [ 'list_element_3' ]</msg>
+<msg time="2025-05-30T17:31:43.738735" level="INFO">list_element_3</msg>
+<msg time="2025-05-30T17:31:43.738758" level="TRACE">Return: None</msg>
+<arg>${test_1_list_1}[2]</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-30T17:31:43.738620" elapsed="0.000159"/>
 </kw>
 <tag>sanity</tag>
-<status status="PASS" start="2025-05-30T15:35:02.881651" elapsed="0.000940"/>
+<status status="PASS" start="2025-05-30T17:31:43.737235" elapsed="0.001661"/>
 </test>
 <doc>This is my first test case in robot framework.</doc>
-<status status="PASS" start="2025-05-30T15:35:02.852852" elapsed="0.030140"/>
+<status status="PASS" start="2025-05-30T17:31:43.731449" elapsed="0.007910"/>
+</suite>
+<suite id="s1-s2" name="Test 2" source="C:\Users\marius\python_robot_framework\tests\test_2.robot">
+<test id="s1-s2-t1" name="TEST2" line="5">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-30T17:31:43.741776" level="TRACE">Arguments: [ 'Hello Again!' ]</msg>
+<msg time="2025-05-30T17:31:43.741827" level="INFO">Hello Again!</msg>
+<msg time="2025-05-30T17:31:43.741849" level="TRACE">Return: None</msg>
+<arg>Hello Again!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-30T17:31:43.741722" elapsed="0.000150"/>
+</kw>
+<tag>regression</tag>
+<status status="PASS" start="2025-05-30T17:31:43.741443" elapsed="0.000552"/>
+</test>
+<status status="PASS" start="2025-05-30T17:31:43.739944" elapsed="0.002391"/>
+</suite>
+<suite id="s1-s3" name="Test 3" source="C:\Users\marius\python_robot_framework\tests\test_3.robot">
+<test id="s1-s3-t1" name="TEST3" line="5">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-30T17:31:43.745088" level="TRACE">Arguments: [ 'Hello Once Again!' ]</msg>
+<msg time="2025-05-30T17:31:43.745138" level="INFO">Hello Once Again!</msg>
+<msg time="2025-05-30T17:31:43.745166" level="TRACE">Return: None</msg>
+<arg>Hello Once Again!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-30T17:31:43.745030" elapsed="0.000164"/>
+</kw>
+<tag>regression</tag>
+<status status="PASS" start="2025-05-30T17:31:43.744757" elapsed="0.000582"/>
+</test>
+<status status="PASS" start="2025-05-30T17:31:43.742884" elapsed="0.002867"/>
+</suite>
+<suite id="s1-s4" name="Test Suite" source="C:\Users\marius\python_robot_framework\tests\test_suite.robot">
+<test id="s1-s4-t1" name="TEST1" line="5">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-30T17:31:43.747945" level="TRACE">Arguments: [ 'Hello World!' ]</msg>
+<msg time="2025-05-30T17:31:43.748026" level="INFO">Hello World!</msg>
+<msg time="2025-05-30T17:31:43.748054" level="TRACE">Return: None</msg>
+<arg>Hello World!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-30T17:31:43.747880" elapsed="0.000198"/>
+</kw>
+<status status="PASS" start="2025-05-30T17:31:43.747563" elapsed="0.000671"/>
+</test>
+<test id="s1-s4-t2" name="TEST2" line="8">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-30T17:31:43.749279" level="TRACE">Arguments: [ 'Hello Again!' ]</msg>
+<msg time="2025-05-30T17:31:43.749345" level="INFO">Hello Again!</msg>
+<msg time="2025-05-30T17:31:43.749375" level="TRACE">Return: None</msg>
+<arg>Hello Again!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-30T17:31:43.749207" elapsed="0.000192"/>
+</kw>
+<status status="PASS" start="2025-05-30T17:31:43.748916" elapsed="0.000622"/>
+</test>
+<test id="s1-s4-t3" name="TEST3" line="11">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-30T17:31:43.750236" level="TRACE">Arguments: [ 'Hello Once Again!' ]</msg>
+<msg time="2025-05-30T17:31:43.750290" level="INFO">Hello Once Again!</msg>
+<msg time="2025-05-30T17:31:43.750316" level="TRACE">Return: None</msg>
+<arg>Hello Once Again!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-30T17:31:43.750176" elapsed="0.000168"/>
+</kw>
+<status status="PASS" start="2025-05-30T17:31:43.749915" elapsed="0.000572"/>
+</test>
+<status status="PASS" start="2025-05-30T17:31:43.746198" elapsed="0.004716"/>
+</suite>
+<status status="PASS" start="2025-05-30T17:31:43.709353" elapsed="0.042114"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="6" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat pass="2" fail="0" skip="0">regression</stat>
 <stat pass="1" fail="0" skip="0">sanity</stat>
 </tag>
 <suite>
-<stat name="Test 1" id="s1" pass="1" fail="0" skip="0">Test 1</stat>
+<stat name="Tests" id="s1" pass="6" fail="0" skip="0">Tests</stat>
+<stat name="Test 1" id="s1-s1" pass="1" fail="0" skip="0">Tests.Test 1</stat>
+<stat name="Test 2" id="s1-s2" pass="1" fail="0" skip="0">Tests.Test 2</stat>
+<stat name="Test 3" id="s1-s3" pass="1" fail="0" skip="0">Tests.Test 3</stat>
+<stat name="Test Suite" id="s1-s4" pass="3" fail="0" skip="0">Tests.Test Suite</stat>
 </suite>
 </statistics>
 <errors>
