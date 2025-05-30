@@ -2,5 +2,14 @@
     "cSpell.words": [
         "loglevel",
         "robotframework"
+    ],
+        "cSpell.dictionaryDefinitions": [
+        {
+            "name": "dolorem",
+            "path": "${workspaceFolder}/.vscode/dolorem_ipsum_ignore.txt"
+        }
+    ],
+    "cSpell.dictionaries": [
+        "dolorem"
     ]
 }
