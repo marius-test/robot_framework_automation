@@ -7,6 +7,8 @@
         "pythonpath",
         "rerunfailed",
         "robotframework",
+        "testpass",
+        "testuser",
         "timestampoutputs",
         "variablefile"
     ],
