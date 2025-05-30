@@ -1,7 +1,14 @@
 {
     "cSpell.words": [
+        "dryrun",
+        "exitonfailure",
         "loglevel",
-        "robotframework"
+        "outputdir",
+        "pythonpath",
+        "rerunfailed",
+        "robotframework",
+        "timestampoutputs",
+        "variablefile"
     ],
         "cSpell.dictionaryDefinitions": [
         {

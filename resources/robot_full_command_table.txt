@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------------------------------------------------------------------
+| Argument               | Description                                                                | Example                           |
+| ---------------------- | -------------------------------------------------------------------------- | --------------------------------- |
+|  -d  or  --outputdir   | Directory where output files (log.html, report.html, output.xml) are saved |  -d output                        |
+|  -o  or  --output      | Name of the output XML file                                                |  -o results.xml                   |
+|  -r  or  --report      | Name of the HTML report file                                               |  -r my_report.html                |
+|  -l  or  --log         | Name of the HTML log file                                                  |  -l my_log.html                   |
+|  -i  or  --include     | Run only test cases matching the included tag                              |  -i sanity                        |
+|  -e  or  --exclude     | Exclude tests matching the given tag                                       |  -e slow                          |
+|  --loglevel            | Set minimum log level ( TRACE ,  DEBUG ,  INFO ,  WARN ,  ERROR ,  NONE )  |  --loglevel TRACE                 |
+|  --variable  or  -v    | Define variable in  name:value  format                                     |  -v BROWSER:Chrome                |
+|  --variablefile        | Python file with variables                                                 |  --variablefile vars.py           |
+|  --pythonpath          | Add directories to Python sys.path                                         |  --pythonpath libs                |
+|  --listener            | Add a listener (plugin) for test execution                                 |  --listener MyListener.py         |
+|  --exitonfailure       | Stop execution on the first test failure                                   |  --exitonfailure                  |
+|  --rerunfailed         | Re-run only tests that failed in a previous output file                    |  --rerunfailed output.xml         |
+|  --timestampoutputs    | Append timestamp to output files                                           |  --timestampoutputs               |
+|  --dryrun              | Validate test data but don’t execute tests                                 |  --dryrun                         |
+|  <test_or_suite_path>  | Path to the test suite or test case directory or file to run               |  tests/  or  tests/my_test.robot  |
+-------------------------------------------------------------------------------------------------------------------------------------------
