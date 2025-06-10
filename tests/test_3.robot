@@ -1,4 +1,5 @@
 *** Settings ***
+Documentation    This is my 3rd test case in robot framework.
 Library    OperatingSystem
 
 *** Test Cases ***
