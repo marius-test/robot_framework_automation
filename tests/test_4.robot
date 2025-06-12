@@ -13,3 +13,7 @@ ${test_4_variable_2}    consectetur adipiscing elit
 &{test_4_dictionary}    username=testuser    password=testpass
 
 *** Test Cases ***
+TEST
+    [Tags]    priority_2
+    Log    ${test_4_dictionary}[password]
+	
