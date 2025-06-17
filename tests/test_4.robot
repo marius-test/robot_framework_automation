@@ -3,6 +3,11 @@ Documentation    This is my 4th test case in robot framework.
 Library    OperatingSystem
 
 *** Keywords ***
+Log My Username
+    Log    ${test_4_dictionary}[username]
+
+Log My Password
+    Log    ${test_4_dictionary}[password]
 
 *** Variables ***
 ${test_4_variable_1}    dolorem ipsum dolor sit amet
@@ -15,5 +20,5 @@ ${test_4_variable_2}    consectetur adipiscing elit
 *** Test Cases ***
 TEST
     [Tags]    priority_2
-    Log    ${test_4_dictionary}[password]
+    Log My Username
 	
