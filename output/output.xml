@@ -1,58 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-06-18T12:28:37.482942" rpa="false" schemaversion="5">
-<suite id="s1" name="Test 4" source="C:\Users\marius\python_robot_framework\tests\test_4.robot">
-<test id="s1-t1" name="TEST" line="39">
-<kw name="Log specific username and password">
-<msg time="2025-06-18T12:28:37.512263" level="TRACE">Arguments: [ ${argument_1}='testuser1' | ${argument_2}='testpass1' ]</msg>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-06-19T17:39:45.171207" rpa="false" schemaversion="5">
+<suite id="s1" name="Test 5" source="C:\Users\marius\python_robot_framework\tests\test_5.robot">
+<test id="s1-t1" name="TEST5" line="6">
+<kw name="Log username and password" owner="resources">
+<msg time="2025-06-19T17:39:45.202530" level="TRACE">Arguments: [ ${argument_1}='testuser1' | ${argument_2}='testpass1' ]</msg>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-06-18T12:28:37.512668" level="TRACE">Arguments: [ 'testuser1' ]</msg>
-<msg time="2025-06-18T12:28:37.512728" level="INFO">testuser1</msg>
-<msg time="2025-06-18T12:28:37.512756" level="TRACE">Return: None</msg>
+<msg time="2025-06-19T17:39:45.202997" level="TRACE">Arguments: [ 'testuser1' ]</msg>
+<msg time="2025-06-19T17:39:45.203053" level="INFO">testuser1</msg>
+<msg time="2025-06-19T17:39:45.203079" level="TRACE">Return: None</msg>
 <arg>${argument_1}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-06-18T12:28:37.512584" elapsed="0.000198"/>
+<status status="PASS" start="2025-06-19T17:39:45.202918" elapsed="0.000186"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-06-18T12:28:37.512928" level="TRACE">Arguments: [ 'testpass1' ]</msg>
-<msg time="2025-06-18T12:28:37.512969" level="INFO">testpass1</msg>
-<msg time="2025-06-18T12:28:37.512992" level="TRACE">Return: None</msg>
+<msg time="2025-06-19T17:39:45.203267" level="TRACE">Arguments: [ 'testpass1' ]</msg>
+<msg time="2025-06-19T17:39:45.203306" level="INFO">testpass1</msg>
+<msg time="2025-06-19T17:39:45.203328" level="TRACE">Return: None</msg>
 <arg>${argument_2}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-06-18T12:28:37.512865" elapsed="0.000150"/>
+<status status="PASS" start="2025-06-19T17:39:45.203186" elapsed="0.000164"/>
 </kw>
-<msg time="2025-06-18T12:28:37.513058" level="TRACE">Return: None</msg>
-<arg>${test_4_dictionary_1}[username]</arg>
-<arg>${test_4_dictionary_1}[password]</arg>
-<status status="PASS" start="2025-06-18T12:28:37.512037" elapsed="0.001043"/>
+<msg time="2025-06-19T17:39:45.203390" level="TRACE">Return: None</msg>
+<arg>${test_dictionary_1}[username]</arg>
+<arg>${test_dictionary_1}[password]</arg>
+<status status="PASS" start="2025-06-19T17:39:45.202269" elapsed="0.001142"/>
 </kw>
-<kw name="Log specific username and password">
-<msg time="2025-06-18T12:28:37.513442" level="TRACE">Arguments: [ ${argument_1}='testuser2' | ${argument_2}='testpass2' ]</msg>
+<kw name="Log username and password" owner="resources">
+<msg time="2025-06-19T17:39:45.203738" level="TRACE">Arguments: [ ${argument_1}='testuser2' | ${argument_2}='testpass2' ]</msg>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-06-18T12:28:37.513597" level="TRACE">Arguments: [ 'testuser2' ]</msg>
-<msg time="2025-06-18T12:28:37.513633" level="INFO">testuser2</msg>
-<msg time="2025-06-18T12:28:37.513654" level="TRACE">Return: None</msg>
+<msg time="2025-06-19T17:39:45.203912" level="TRACE">Arguments: [ 'testuser2' ]</msg>
+<msg time="2025-06-19T17:39:45.203958" level="INFO">testuser2</msg>
+<msg time="2025-06-19T17:39:45.203984" level="TRACE">Return: None</msg>
 <arg>${argument_1}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-06-18T12:28:37.513542" elapsed="0.000134"/>
+<status status="PASS" start="2025-06-19T17:39:45.203842" elapsed="0.000168"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-06-18T12:28:37.513788" level="TRACE">Arguments: [ 'testpass2' ]</msg>
-<msg time="2025-06-18T12:28:37.513821" level="INFO">testpass2</msg>
-<msg time="2025-06-18T12:28:37.513839" level="TRACE">Return: None</msg>
+<msg time="2025-06-19T17:39:45.204147" level="TRACE">Arguments: [ 'testpass2' ]</msg>
+<msg time="2025-06-19T17:39:45.204187" level="INFO">testpass2</msg>
+<msg time="2025-06-19T17:39:45.204212" level="TRACE">Return: None</msg>
 <arg>${argument_2}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-06-18T12:28:37.513736" elapsed="0.000123"/>
+<status status="PASS" start="2025-06-19T17:39:45.204083" elapsed="0.000153"/>
 </kw>
-<msg time="2025-06-18T12:28:37.513891" level="TRACE">Return: None</msg>
-<arg>${test_4_dictionary_2}[username]</arg>
-<arg>${test_4_dictionary_2}[password]</arg>
-<status status="PASS" start="2025-06-18T12:28:37.513290" elapsed="0.000621"/>
+<msg time="2025-06-19T17:39:45.204275" level="TRACE">Return: None</msg>
+<arg>${test_dictionary_2}[username]</arg>
+<arg>${test_dictionary_2}[password]</arg>
+<status status="PASS" start="2025-06-19T17:39:45.203576" elapsed="0.000724"/>
 </kw>
 <tag>priority_2</tag>
-<status status="PASS" start="2025-06-18T12:28:37.511455" elapsed="0.002586"/>
+<status status="PASS" start="2025-06-19T17:39:45.201667" elapsed="0.002778"/>
 </test>
-<doc>This is my 4th test case in robot framework.</doc>
-<status status="PASS" start="2025-06-18T12:28:37.484047" elapsed="0.030498"/>
+<status status="PASS" start="2025-06-19T17:39:45.172580" elapsed="0.032339"/>
 </suite>
 <statistics>
 <total>
@@ -62,7 +61,7 @@
 <stat pass="1" fail="0" skip="0">priority_2</stat>
 </tag>
 <suite>
-<stat name="Test 4" id="s1" pass="1" fail="0" skip="0">Test 4</stat>
+<stat name="Test 5" id="s1" pass="1" fail="0" skip="0">Test 5</stat>
 </suite>
 </statistics>
 <errors>
