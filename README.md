@@ -17,7 +17,7 @@ Automation demonstration using **Robot Framework** with **Python**.
 
 To explore Robot Framework capabilities and build reusable test automation using Python.
 
-### Tech Stack
+### Tools and Libraries
 
 - Robot Framework
 - SeleniumLibrary
