@@ -1,3 +1,6 @@
+# File: robot_test_commands.txt
+# Purpose: Basic Robot Framework commands to execute tests from the console
+
 To execute one test:
 robot tests/test_1.robot
 

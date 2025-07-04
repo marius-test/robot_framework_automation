@@ -1,24 +1,23 @@
-# python_robot_framework
+# robot_framework_automation
 
-Automation demonstration using **Robot Framework** with **Python**.
+Automation demonstration using **Robot Framework**.
 
 ### Project Structure
 
-- `test`: contains test cases and a test suite
-- `output`: generated logs and HTML report from test runs
-- `resources`: supporting files including:
-  - `debug.py`: custom Python script for testing/debugging code snippets during development
-  - `test_template.robot`: reusable Robot Framework test template
-  - `dolorem_ipsum.txt`: mock test data
-  - `robot_full_command_table.txt`: reference for Robot Framework commands
-  - `robot_terminal_commands.txt`: commands to execute and manage tests
+- `data`: external test data files for use in automation
+- `debug`: contains debugging scripts (e.g., `debug.py`)  
+- `docs`: commands and instructions files  
+- `mock_data`: mock data files (e.g., `dolorem_ipsum.txt`)  
+- `output`: generated HTML reports and logs from test runs  
+- `resources`: contains reusable resource files like `resources.robot`  
+- `tests`: contains test cases and templates (e.g., `test_template.robot`)  
 
 ### Purpose
 
-To explore Robot Framework capabilities and build reusable test automation using Python.
+This project aims to demonstrate the capabilities of Robot Framework by building a solid and reusable test automation framework. It provides a foundation for creating reliable automated tests that can be extended and adapted to various testing needs. By incorporating best practices and reusable components, it helps improve test coverage and streamline the testing process.
 
 ### Tools and Libraries
 
-- Robot Framework
-- SeleniumLibrary
+- Robot Framework  
+- SeleniumLibrary  
 - Python  
