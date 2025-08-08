@@ -12,7 +12,7 @@
         "timestampoutputs",
         "variablefile"
     ],
-        "cSpell.dictionaryDefinitions": [
+    "cSpell.dictionaryDefinitions": [
         {
             "name": "dolorem",
             "path": "${workspaceFolder}/.vscode/dolorem_ipsum_ignore.txt"
@@ -22,4 +22,6 @@
         "dolorem"
     ],
     "python-envs.pythonProjects": [],
+    "python.defaultInterpreterPath": "${workspaceFolder}/robot-env/Scripts/python.exe",
+    "python.terminal.activateEnvironment": true
 }
