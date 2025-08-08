@@ -1,0 +1,22 @@
+# Create Virtual Environment
+python -m venv robot-env
+
+# Allow PowerShell to Run Scripts in This Session
+# Avoids default execution policy block for scripts in Windows
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+
+# Activate the Virtual Environment
+.\robot-env\Scripts\Activate.ps1
+
+# Install Required Packages
+pip install robotframework robotframework-seleniumlibrary selenium
+
+# Generate requirements.txt
+# Use this PowerShell-safe command to export installed packages to requirements.txt:
+pip freeze | Out-File -FilePath requirements.txt -Encoding ASCII
+
+# Package Explanations
+robotframework             Generic automation framework for acceptance testing and RPA
+robotframework-seleniumlibrary  
+                           Robot Framework library for web UI automation using Selenium
+selenium                   Automates browser actions (underlying engine for SeleniumLibrary)

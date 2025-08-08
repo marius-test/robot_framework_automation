@@ -7,10 +7,12 @@
         "pythonpath",
         "rerunfailed",
         "robotframework",
+        "seleniumlibrary",
         "testpass",
         "testuser",
         "timestampoutputs",
-        "variablefile"
+        "variablefile",
+        "venv"
     ],
     "cSpell.dictionaryDefinitions": [
         {
