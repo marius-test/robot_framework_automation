@@ -2,12 +2,12 @@
 Library    OperatingSystem
 
 *** Test Cases ***
-TEST1
+TEST6.1
     Log    Hello World!
 
-TEST2
+TEST6.2
     Log    Hello Again!
 
-TEST3
+TEST6.3
     Log    Hello Once Again!
     

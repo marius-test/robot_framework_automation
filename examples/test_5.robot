@@ -1,6 +1,6 @@
 *** Settings ***
 Library    OperatingSystem
-Resource    ../resources/resources.robot
+Resource    ../examples/resources.robot
 
 *** Test Cases ***
 TEST5

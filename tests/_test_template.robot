@@ -1,7 +1,13 @@
-*** Settings ***  # mandatory, declare libraries here
+*** Settings ***  # mandatory, declare libraries and resources here
+Resource   ../resources/variables.robot
+Library    SeleniumLibrary
+Resource   ../resources/keywords.robot
 
-*** Keywords ***
-
-*** Variables ***
+*** Variables ***  # declare variables used in tests and keywords here
 
 *** Test Cases ***  # mandatory, write test cases here
+
+*** Keywords ***  # define reusable keywords here
+
+# to execute a single test, run the following command in the terminal:
+# robot -d output --loglevel DEBUG tests\test.robot

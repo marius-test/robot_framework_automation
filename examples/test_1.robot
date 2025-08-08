@@ -2,8 +2,6 @@
 Documentation    This is my 1st test case in robot framework.
 Library    OperatingSystem
 
-*** Keywords ***
-
 *** Variables ***
 ${test_variable_1}    dolorem ipsum dolor sit amet
 ${test_variable_2}    consectetur adipiscing elit
