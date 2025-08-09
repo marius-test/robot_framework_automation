@@ -1,7 +1,9 @@
 *** Settings ***
+
 Library    OperatingSystem
 
 *** Test Cases ***
+
 TEST6.1
     Log    Hello World!
 

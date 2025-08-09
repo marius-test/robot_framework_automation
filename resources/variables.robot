@@ -1,4 +1,5 @@
 *** Variables ***
+
 # DATA
 ${BASE_URL}    https://www.saucedemo.com/
 ${BROWSER}    Chrome
@@ -22,3 +23,6 @@ ${LOGIN_LOGO}    class=login_logo
 ${LOGIN_BUTTON}    id=login-button
 ${USERNAME_FIELD}    id=user-name
 ${PASSWORD_FIELD}    id=password
+
+# INVENTORY PAGE LOCATORS
+${APP_LOGO}    class=app_logo

@@ -1,8 +1,10 @@
 *** Settings ***
+
 Library    OperatingSystem
 Resource    ../examples/resources.robot
 
 *** Test Cases ***
+
 TEST5
     [Tags]    priority_2
     Log username and password   ${test_dictionary_1}[username]    ${test_dictionary_1}[password]

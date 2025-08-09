@@ -1,8 +1,10 @@
 *** Settings ***
+
 Documentation    This is my 1st test case in robot framework.
 Library    OperatingSystem
 
 *** Variables ***
+
 ${test_variable_1}    dolorem ipsum dolor sit amet
 ${test_variable_2}    consectetur adipiscing elit
 
@@ -11,6 +13,7 @@ ${test_variable_2}    consectetur adipiscing elit
 &{test_dictionary}    username=testuser    password=testpass
 
 *** Test Cases ***
+
 TEST1
     [Tags]    sanity
     Log    ${test_variable_1}
