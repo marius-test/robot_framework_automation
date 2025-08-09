@@ -33,7 +33,7 @@ This project aims to demonstrate the capabilities of Robot Framework by building
 
 ### Setup & Running Tests
 
-1. Create and activate the virtual environment (optional but recommended):
+1. Create and activate the virtual environment:
 
    \# Linux/macOS  
    python -m venv robot-env  
@@ -49,7 +49,7 @@ This project aims to demonstrate the capabilities of Robot Framework by building
 
 3. Run tests:
 
-   \# Use PowerShell scripts in the runners folder to run individual or all tests conveniently.
+   \# Use PowerShell scripts in the runners folder to run individual or all tests.
 
    \# Or run directly with:  
    robot tests/
