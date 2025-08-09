@@ -9,7 +9,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 .\robot-env\Scripts\Activate.ps1
 
 # Install Required Packages
-pip install robotframework robotframework-seleniumlibrary selenium
+pip install robotframework robotframework-seleniumlibrary selenium robotframework-tidy
 
 # Generate requirements.txt
 # Use this PowerShell-safe command to export installed packages to requirements.txt:
@@ -20,3 +20,4 @@ robotframework             Generic automation framework for acceptance testing a
 robotframework-seleniumlibrary  
                            Robot Framework library for web UI automation using Selenium
 selenium                   Automates browser actions (underlying engine for SeleniumLibrary)
+robotframework-tidy        Code formatter and linter for Robot Framework files; ensures consistent formatting and style

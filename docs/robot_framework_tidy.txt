@@ -1,0 +1,30 @@
+# Using robotframework-tidy
+
+# Format a Single File
+# Automatically fixes indentation, spacing, and aligns sections in the given file
+robotidy path\to\file.robot
+
+# Format All .robot Files in Project
+# Recursively formats every Robot Framework file in the current folder
+robotidy .
+
+# Check Formatting Without Modifying
+# Useful for CI/CD to fail builds if formatting is incorrect
+robotidy --check .
+
+# Apply Specific Transformations
+# Example: run only the "AlignSettingsSection" transformer
+robotidy --transform AlignSettingsSection path\to\file.robot
+
+# View Available Transformers
+# Lists all built-in formatting rules you can enable/disable
+robotidy --list-transformers
+
+# Configuration File
+# You can create a 'pyproject.toml' file to define tidy rules for the whole project
+# Example:
+# [tool.robotidy]
+# configure = [
+#     "AlignSettingsSection:enabled=True",
+#     "OrderSettingsSection:enabled=True"
+# ]
