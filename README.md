@@ -9,11 +9,13 @@ Automation demonstration using **Robot Framework**.
 - `docs`: plain text commands, instructions, and setup notes  
 - `mock_data`: mock data files (e.g., `dolorem_ipsum.txt`)  
 - `output`: generated reports, logs, and output files from test runs  
-- `resources`: reusable resource files including keywords and variables (e.g., `keywords.robot`, `variables.robot`)  
+- `resources`: reusable resource files including keywords, variables, and expected values (e.g., `keywords.robot`, `variables.robot`, `expected_values.robot`)  
 - `robot-env`: Python virtual environment for this project  
+- `runners`: PowerShell scripts (`.ps1`) to run one or all tests easily  
 - `tests`: test cases and test suites (e.g., `test_login.robot`)  
-- `examples`: early exploratory test cases kept for reference
+- `examples`: early exploratory test cases kept for reference  
 - `requirements.txt`: Python package dependencies for the project  
+- `pyproject.toml`: Python project configuration and metadata  
 
 ### Purpose
 
