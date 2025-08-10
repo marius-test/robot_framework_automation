@@ -1,5 +1,5 @@
 *** Settings ***
-
+Resource    ../resources/variables.robot
 Library    SeleniumLibrary
 
 *** Keywords ***
