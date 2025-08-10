@@ -1,7 +1,6 @@
 *** Settings ***  # mandatory, declare libraries and resources here
-
 Resource    ../resources/variables.robot
-Resource    ..resources/expected_values.robot
+Resource    ../resources/expected_values.robot
 Resource    ../resources/keywords.robot
 
 *** Variables ***  # declare variables used in tests and keywords here

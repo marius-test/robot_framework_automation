@@ -1,10 +1,8 @@
 *** Settings ***
-
 Documentation    This is my 4th test case in robot framework.
 Library    OperatingSystem
 
 *** Variables ***
-
 ${test_variable_1}    dolorem ipsum dolor sit amet
 ${test_variable_2}    consectetur adipiscing elit
 
@@ -14,14 +12,12 @@ ${test_variable_2}    consectetur adipiscing elit
 &{test_dictionary_2}    username=testuser2    password=testpass2
 
 *** Test Cases ***
-
 TEST4
     [Tags]    priority_2
     Log specific username and password    ${test_dictionary_1}[username]    ${test_dictionary_1}[password]
     Log specific username and password    ${test_dictionary_2}[username]    ${test_dictionary_2}[password]
 
 *** Keywords ***
-
 Log username
     Log    ${test_dictionary_1}[username]
 

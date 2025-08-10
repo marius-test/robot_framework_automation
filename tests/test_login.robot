@@ -1,11 +1,9 @@
 *** Settings ***
-
 Resource    ../resources/variables.robot
 Resource    ../resources/expected_values.robot
 Resource    ../resources/keywords.robot
 
 *** Test Cases ***
-
 Login Successful
     Open Login Page
     Input Text    ${USERNAME_FIELD}    ${USER_TYPE}[standard]

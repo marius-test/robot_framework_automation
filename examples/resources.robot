@@ -1,9 +1,7 @@
 *** Settings ***
-
 Library    OperatingSystem
 
 *** Variables ***
-
 ${test_variable_1}    dolorem ipsum dolor sit amet
 ${test_variable_2}    consectetur adipiscing elit
 
@@ -13,7 +11,6 @@ ${test_variable_2}    consectetur adipiscing elit
 &{test_dictionary_2}    username=testuser2    password=testpass2
 
 *** Keywords ***
-
 Log username
     [Arguments]    ${argument_1}
     Log    ${argument_1}
