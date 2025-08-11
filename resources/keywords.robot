@@ -8,7 +8,7 @@ open login page
     Open Browser    ${BASE_URL}    ${BROWSER}
     Wait Until Element Is Visible    ${LOGIN_LOGO}    timeout=${DEFAULT_TIMEOUT}
 
-login with username and password
+login
     [Arguments]    ${username}    ${password}
     open login page
     Input Text    ${USERNAME_FIELD}    ${username}
