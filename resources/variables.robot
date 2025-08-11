@@ -24,6 +24,8 @@ ${DEFAULT_TIMEOUT}    5
 ${PASSWORD}    secret_sauce
 ${WRONG_PASSWORD}    wrong_password
 
+# empty variable used to iterate over a dictionary
+${key}
 
 # LOGIN PAGE LOCATORS
 ${LOGIN_LOGO}    class=login_logo

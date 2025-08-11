@@ -1,6 +1,7 @@
 *** Settings ***
 Documentation     This file contains reusable variables and keywords that can be shared and used in different tests to keep things organized and avoid repetition.
 Library    OperatingSystem
+Library    SeleniumLibrary
 
 *** Variables ***
 # string variables
@@ -15,17 +16,17 @@ ${test_variable_2}    consectetur adipiscing elit
 &{test_dictionary_2}    username=testuser2    password=testpass2
 
 *** Keywords ***
-Log Username
+log username
     [Arguments]    ${argument_1}
     # log the provided username argument
     Log    ${argument_1}
 
-Log Password
+log password
     [Arguments]    ${argument_1}
     # log the provided password argument
     Log    ${argument_1}
 
-Log Username And Password
+log username and password
     [Arguments]    ${argument_1}    ${argument_2}
     # log the provided username and password arguments
     Log    ${argument_1}

@@ -5,6 +5,7 @@ Resource    ../examples/resources.robot
 *** Test Cases ***
 Test Variables
     [Tags]    sanity
+    [Teardown]    Close Browser  # runs even if the test fails
     # log and verify string variable 1
     Log    ${test_variable_1}
     Should Be Equal    dolorem ipsum dolor sit amet    ${test_variable_1}
@@ -24,11 +25,11 @@ Test List
 
 Test Dictionary
     # log and verify dictionary value for key "username"
-    Log Username    ${test_dictionary_1}[username]
+    log username    ${test_dictionary_1}[username]
     Should Be Equal    testuser1    ${test_dictionary_1}[username]
 
     # log and verify dictionary value for key "password"
-    Log Password    ${test_dictionary_1}[password]
+    log password    ${test_dictionary_1}[password]
     Should Be Equal    testpass1    ${test_dictionary_1}[password]
 
 # robot -d output --loglevel DEBUG tests\test_1.robot
