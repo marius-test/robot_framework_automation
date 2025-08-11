@@ -33,25 +33,17 @@ This project aims to demonstrate the capabilities of Robot Framework by building
 
 ### Setup & Running Tests
 
-1. Create and activate the virtual environment:
-
-   \# Linux/macOS  
-   - python -m venv robot-env  
-   - source robot-env/bin/activate
-
-   \# Windows  
-   - python -m venv robot-env  
-   - robot-env\Scripts\activate
-
-2. Install dependencies:
-
-   - pip install -r requirements.txt
-
-3. Run tests:
-
-   \# Use PowerShell scripts in the runners folder to run individual or all tests.
-
-   \# Or run directly with:  
-   - robot tests/
-
-4. View reports in the output directory after test execution.
+1. Create and activate the virtual environment:  
+   - Linux/macOS  
+      - python -m venv robot-env  
+      - source robot-env/bin/activate  
+   - Windows  
+      - python -m venv robot-env  
+      - robot-env\Scripts\activate  
+2. Install dependencies:  
+   - pip install -r requirements.txt  
+3. Run tests:  
+   - Use PowerShell scripts in the runners folder to run individual or all tests.  
+   - Or run directly with:  
+      - robot tests/  
+4. View reports in the output directory after test execution.  
