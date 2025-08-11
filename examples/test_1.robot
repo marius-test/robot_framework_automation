@@ -1,20 +1,34 @@
 *** Settings ***
-Documentation    This is my 1st test case in robot framework.
-Library    OperatingSystem
-
-*** Variables ***
-${test_variable_1}    dolorem ipsum dolor sit amet
-${test_variable_2}    consectetur adipiscing elit
-
-@{test_list}    sed    do    eiusmod    tempor
-
-&{test_dictionary}    username=testuser    password=testpass
+Documentation    Demonstrates usage of variables, lists, and dictionaries, along with simple assertions for expected vs actual values.
+Resource    ../examples/resources.robot
 
 *** Test Cases ***
-TEST1
+Test Variables
     [Tags]    sanity
+    # log and verify string variable 1
     Log    ${test_variable_1}
+    Should Be Equal    dolorem ipsum dolor sit amet    ${test_variable_1}
+
+    # log and verify string variable 2
     Log    ${test_variable_2}
+    Should Be Equal    consectetur adipiscing elit    ${test_variable_2}
+
+Test List
+    # log and verify list item at index 2
     Log    ${test_list}[2]
-    Log    ${test_dictionary}[username]
-    Log    ${test_dictionary}[password]
+    Should Be Equal    do    ${test_list}[2]
+
+    # log and verify list item at index 3
+    Log    ${test_list}[3]
+    Should Be Equal    eiusmod    ${test_list}[3]
+
+Test Dictionary 1
+    # log and verify dictionary value for key "username"
+    Log Username    ${test_dictionary_1}[username]
+    Should Be Equal    testuser1    ${test_dictionary_1}[username]
+
+    # log and verify dictionary value for key "password"
+    Log Password    ${test_dictionary_1}[password]
+    Should Be Equal    testpass1    ${test_dictionary_1}[password]
+
+# robot -d output --loglevel DEBUG tests\test_1.robot

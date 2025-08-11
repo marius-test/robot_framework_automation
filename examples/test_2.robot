@@ -1,8 +1,14 @@
 *** Settings ***
-Documentation    This is my 2nd test case in robot framework.
-Library    OperatingSystem
+Documentation    Demonstrates using reusable keywords to log usernames and passwords from multiple dictionaries.
+Resource    ../examples/resources.robot
 
 *** Test Cases ***
-TEST2
+Test Dictionary 1 & 2
     [Tags]    regression
-    Log    Hello Again!
+    # log username and password from first dictionary
+    Log Username And Password   ${test_dictionary_1}[username]    ${test_dictionary_1}[password]
+
+    # log username and password from second dictionary
+    Log Username And Password   ${test_dictionary_2}[username]    ${test_dictionary_2}[password]
+
+# robot -d output --loglevel DEBUG tests\test_2.robot
