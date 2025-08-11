@@ -22,7 +22,7 @@ Test List
     Log    ${test_list}[3]
     Should Be Equal    eiusmod    ${test_list}[3]
 
-Test Dictionary 1
+Test Dictionary
     # log and verify dictionary value for key "username"
     Log Username    ${test_dictionary_1}[username]
     Should Be Equal    testuser1    ${test_dictionary_1}[username]
