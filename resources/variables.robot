@@ -16,13 +16,21 @@ ${DEFAULT_TIMEOUT}    5
 ...    performance=performance_glitch_user
 ...    error=error_user
 ...    visual=visual_user
+...    invalid=invalid_user
+
+@{VALID_USERS}    standard    problem    performance    error    visual
+@{INVALID_USERS}    locked    invalid
+
 ${PASSWORD}    secret_sauce
+${WRONG_PASSWORD}    wrong_password
+
 
 # LOGIN PAGE LOCATORS
 ${LOGIN_LOGO}    class=login_logo
 ${LOGIN_BUTTON}    id=login-button
 ${USERNAME_FIELD}    id=user-name
 ${PASSWORD_FIELD}    id=password
+${ERROR_CONTAINER}    class=error-message-container
 
 # INVENTORY PAGE LOCATORS
 ${APP_LOGO}    class=app_logo
