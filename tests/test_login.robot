@@ -2,11 +2,11 @@
 Resource    ../resources/variables.robot
 Resource    ../resources/expected_values.robot
 Resource    ../resources/keywords.robot
+Test Teardown    Close Browser
 
 *** Test Cases ***
 Test Login Successful
     [Tags]    regression
-    [Teardown]    Close Browser
     FOR    ${key}    IN    @{VALID_USERS}
     login    ${USER_TYPE}[${key}]    ${PASSWORD}
     Wait Until Element Is Visible    ${APP_LOGO}    timeout=${DEFAULT_TIMEOUT}
@@ -16,7 +16,6 @@ Test Login Successful
 
 Test Login Failed
     [Tags]    regression
-    [Teardown]    Close Browser
     FOR    ${key}   IN    @{INVALID_USERS}
     login   ${USER_TYPE}[${key}]    ${PASSWORD}
     Wait Until Element Is Visible    ${ERROR_CONTAINER}    timeout=${DEFAULT_TIMEOUT}

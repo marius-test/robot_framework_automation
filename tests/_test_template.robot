@@ -2,6 +2,7 @@
 Resource    ../resources/variables.robot
 Resource    ../resources/expected_values.robot
 Resource    ../resources/keywords.robot
+Test Teardown    Close Browser
 
 *** Variables ***  # declare local variables here
 
