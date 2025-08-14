@@ -21,4 +21,3 @@ Test Login Failed
     Wait Until Element Is Visible    ${ERROR_CONTAINER}    timeout=${DEFAULT_TIMEOUT}
     Page Should Contain Element    ${ERROR_CONTAINER}
     END
-    
