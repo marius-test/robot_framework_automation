@@ -1,3 +1,6 @@
+# File: setup_venv_instructions.txt
+# Purpose: Explains how to create the virtual environment and install required packages
+
 # Create Virtual Environment
 python -m venv robot-env
 
@@ -16,8 +19,7 @@ pip install robotframework robotframework-seleniumlibrary selenium robotframewor
 pip freeze | Out-File -FilePath requirements.txt -Encoding ASCII
 
 # Package Explanations
-robotframework             Generic automation framework for acceptance testing and RPA
-robotframework-seleniumlibrary  
-                           Robot Framework library for web UI automation using Selenium
-selenium                   Automates browser actions (underlying engine for SeleniumLibrary)
-robotframework-tidy        Code formatter and linter for Robot Framework files; ensures consistent formatting and style
+robotframework                  Generic automation framework for acceptance testing and RPA
+robotframework-seleniumlibrary  Robot Framework library for web UI automation using Selenium
+selenium                        Automates browser actions (underlying engine for SeleniumLibrary)
+robotframework-tidy             Code formatter and linter for Robot Framework files; ensures consistent formatting and style

@@ -1,4 +1,5 @@
-# Using robotframework-tidy
+# File: robot_framework_tidy.txt
+# Purpose: Explains how to use robotframework-tidy
 
 # Format a Single File
 # Automatically fixes indentation, spacing, and aligns sections in the given file
