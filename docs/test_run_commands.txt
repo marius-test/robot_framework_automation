@@ -1,30 +1,32 @@
 # File: robot_test_commands.txt
 # Purpose: Basic Robot Framework commands to execute tests from the console
 
-To execute one test:
+# To execute one test:
 robot tests/test_1.robot
 
-To execute all tests from the folder:
+# To execute all tests from the folder:
 robot tests
 
-To execute multiple tests:
+# To execute multiple tests:
 robot tests/test_1.robot tests/test_2.robot
 
-To execute all tests in a random order:
+# To execute all tests in a random order:
 robot --randomize ALL tests
 
-To execute all tests that match a tag:
+# To execute all tests that match a tag:
 robot --randomize ALL -i regression tests
 
-To execute all tests that match multiple tags:
+# To execute all tests that match multiple tags:
 robot --randomize ALL -i tag1ANDtag2 tests
 (Between tag1 and tag2, AND/OR can be used, no spaces required)
 
-To save logs add the following command --loglevel INFO:
+# To save logs add the following command --loglevel INFO:
 robot --randomize ALL --loglevel INFO tests
 
-Types of log levels from least to most detailed: INFO, DEBUG, TRACE
+# Types of log levels from least to most detailed: NONE, ERROR, WARN, INFO, DEBUG, TRACE
+# Default log level: INFO
 
-To save the logs in a specific folder use the following command:
+# To save the logs in a specific folder use the following command:
 robot -d output -i sanityORregression --loglevel TRACE tests
 (“output” is the name of the folder)
+# Default output folder: project root
