@@ -37,5 +37,5 @@ ${ERROR_CONTAINER}    class=error-message-container
 # INVENTORY PAGE LOCATORS
 ${APP_LOGO}    class=app_logo
 ${ITEM_NAME}    class=inventory_item_name
-${ITEM_TEXT}    class=inventory_item_desc
+${ITEM_DESCRIPTION}    class=inventory_item_desc
 ${ITEM_PRICE}    class=inventory_item_price

@@ -1,11 +1,10 @@
 *** Settings ***
 Resource    ../resources/variables.robot
-Resource    ../resources/expected_values.robot
+Variables    ../resources/expected_values.py
 Resource    ../resources/keywords.robot
 Test Teardown    Close Browser
 
 *** Test Cases ***
 Test Inventory Items Are Displayed
-    [Tags]    standard_user
-    open inventory page    ${USER_TYPE}[standard]    ${PASSWORD}
-    
+    [Tags]    validation    standard_user
+    validate inventory items    ${ITEMS}    ${USER_TYPE}[standard]    ${PASSWORD}
