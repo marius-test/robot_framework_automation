@@ -7,6 +7,9 @@ Test Teardown    Close Browser
 *** Variables ***  # declare local variables here
 
 *** Test Cases ***  # mandatory, write test cases here
+Test <Feature> <Behavior>
+    [Tags]    template
+    Log    "test template"
 
 *** Keywords ***  # define local keywords here
 

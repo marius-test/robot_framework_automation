@@ -1,29 +1,12 @@
 {
-    "cSpell.words": [
-        "dryrun",
-        "exitonfailure",
-        "loglevel",
-        "outputdir",
-        "pyproject",
-        "pythonpath",
-        "rerunfailed",
-        "robotframework",
-        "robotidy",
-        "seleniumlibrary",
-        "testpass",
-        "testuser",
-        "timestampoutputs",
-        "variablefile",
-        "venv"
-    ],
     "cSpell.dictionaryDefinitions": [
         {
-            "name": "dolorem",
-            "path": "${workspaceFolder}/.vscode/dolorem_ipsum_ignore.txt"
+            "name": "ignore_words_dictionary",
+            "path": "${workspaceFolder}/.vscode/ignore_words_dictionary.txt"
         }
     ],
     "cSpell.dictionaries": [
-        "dolorem"
+        "ignore_words_dictionary"
     ],
     "python-envs.pythonProjects": [],
     "python.defaultInterpreterPath": "${workspaceFolder}/robot-env/Scripts/python.exe",
