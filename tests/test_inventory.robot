@@ -1,7 +1,7 @@
 *** Settings ***
-Resource    ../resources/variables.robot
+Resource    ../resources/variables.resource
 Variables    ../resources/expected_values.py
-Resource    ../resources/keywords.robot
+Resource    ../resources/keywords.resource
 Test Teardown    Close Browser
 
 *** Test Cases ***

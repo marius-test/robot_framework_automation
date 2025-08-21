@@ -1,7 +1,7 @@
 *** Settings ***
-Resource    ../resources/variables.robot
-Resource    ../resources/expected_values.robot
-Resource    ../resources/keywords.robot
+Resource    ../resources/variables.resource
+Resource    ../resources/expected_values.resource
+Resource    ../resources/keywords.resource
 Test Teardown    Close Browser
 
 *** Test Cases ***

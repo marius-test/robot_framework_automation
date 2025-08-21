@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation    Demonstrates usage of variables, lists, and dictionaries, along with simple assertions for expected vs actual values.
-Resource    ../examples/resources.robot
+Resource    ../examples/test_data.resource
 
 *** Test Cases ***
 Test Variables

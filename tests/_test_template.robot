@@ -1,7 +1,8 @@
 *** Settings ***  # mandatory, declare documentation, libraries and resources here
-Resource    ../resources/variables.robot
-Resource    ../resources/expected_values.robot
-Resource    ../resources/keywords.robot
+Resource    ../resources/variables.resource
+Variables    ../resources/expected_values.py
+Resource    ../resources/expected_values.resource
+Resource    ../resources/keywords.resource
 Test Teardown    Close Browser
 
 *** Variables ***  # declare local variables here

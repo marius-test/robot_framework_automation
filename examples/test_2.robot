@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation    Demonstrates using reusable keywords to log usernames and passwords from multiple dictionaries.
-Resource    ../examples/resources.robot
+Resource    ../examples/test_data.resource
 
 *** Test Cases ***
 Log Dictionary 1 & 2
