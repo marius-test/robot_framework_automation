@@ -1,6 +1,7 @@
 *** Settings ***  # mandatory, declare documentation, libraries and resources here
 Name    Test Template
-Documentation    Robot Framework test suite template created by Marius B.
+Documentation    Robot Framework test suite template
+Metadata    author    Marius B.
 Resource    ../resources/variables.resource
 Variables    ../resources/expected_values.py
 Resource    ../resources/expected_values.resource
@@ -8,15 +9,17 @@ Resource    ../resources/keywords.resource
 Test Teardown    Close Browser
 
 *** Variables ***  # declare local variables here
+${MESSAGE_TEXT}    test template
 
 *** Test Cases ***  # mandatory, write test cases here
 Test <Feature> <Behavior>
     [Tags]    template
-    Log    "test template"
+    new improved log    ${MESSAGE_TEXT}    DEBUG
 
 *** Keywords ***  # define local keywords here
 new improved log
-    Log    test template
+    [Arguments]    ${message}    ${level}=INFO
+    Log    ${message}    ${level}
 
 *** Comments ***
 Remove unused sections, libraries, resources.
