@@ -1,1 +1,2 @@
-TODO environment variables file for "dev"
+TODO add documentation to each test suite
+TODO fix the VS Code error with the variables.resource file
