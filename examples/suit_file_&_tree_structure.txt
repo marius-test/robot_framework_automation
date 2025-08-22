@@ -1,22 +1,22 @@
 # Legend
-▷ Directory (No Suite)
-▶︎ Suite Directory
-◻︎ File (No Suite)
-◼︎ Suite File
+├── Branch / Suite file with siblings below
+└── Last branch / Suite file in the current level
+│   Vertical connector (continues branch to children)
+─   Horizontal line (follows branch symbol)
 
 # Example
- ----- Tree Structure / Order --------- | ---- Suite Name ---------
-  ▶︎ Root_Suite                          | Root Suite
-    ◼︎ A_Suite.robot                     | A Suite
-    ▶︎ Earlier_Suite_Directory           | Earlier Suite Directory
-      ◼︎ B_Suite.robot                   | B Suite
-      ◼︎ C_Suite.robot                   | C Suite
-    ▷ Keywords (No Suite)               |
-      ◻︎ technical_keywords.resource     |
-    ▶︎ Later_Suite_Directory             | Later Suite Directory
-      ◼︎ 01__FirstSuite.robot            | First Suite
-      ◼︎ 02__SecondSuite.robot           | Second Suite
-      ▶︎ 03__ThirdSuite                  | Third Suite
-        ◼︎ 01__FirstSubSuite.robot       | First Sub Suite
-        ◼︎ 02__SecondSubSuite.robot      | Second Sub Suite
-      ◼︎ 04__FourthSuite.robot           | Fourth Suite
+----- Tree Structure / Order --------- | ---- Suite Name ---------
+Root_Suite                             | Root Suite
+├── A_Suite.robot                      | A Suite
+├── Earlier_Suite_Directory            | Earlier Suite Directory
+│   ├── B_Suite.robot                  | B Suite
+│   └── C_Suite.robot                  | C Suite
+├── Keywords (No Suite)                |
+│   └── technical_keywords.resource
+└── Later_Suite_Directory              | Later Suite Directory
+    ├── 01__FirstSuite.robot           | First Suite
+    ├── 02__SecondSuite.robot          | Second Suite
+    ├── 03__ThirdSuite                 | Third Suite
+    │   ├── 01__FirstSubSuite.robot    | First Sub Suite
+    │   └── 02__SecondSubSuite.robot   | Second Sub Suite
+    └── 04__FourthSuite.robot          | Fourth Suite

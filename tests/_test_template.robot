@@ -1,5 +1,6 @@
 *** Settings ***  # mandatory, declare documentation, libraries and resources here
-Documentation    Robot Framework test suite template
+Name    Test Template
+Documentation    Robot Framework test suite template created by Marius B.
 Resource    ../resources/variables.resource
 Variables    ../resources/expected_values.py
 Resource    ../resources/expected_values.resource
@@ -14,9 +15,11 @@ Test <Feature> <Behavior>
     Log    "test template"
 
 *** Keywords ***  # define local keywords here
-
-# to execute a single test, run the following command in the terminal:
-# robot -d output --loglevel DEBUG tests\test.robot
+new improved log
+    Log    test template
 
 *** Comments ***
-Robot Framework test suite template
+Remove unused sections, libraries, resources.
+
+To execute a single test, run the following command in the terminal:
+robot -d output --loglevel DEBUG tests\test.robot
