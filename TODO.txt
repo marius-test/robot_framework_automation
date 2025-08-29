@@ -1,2 +1,2 @@
 TODO add documentation to each test suite
-TODO fix the VS Code error with the variables.resource file
+TODO redo the login tests with Test Template in the Settings section
