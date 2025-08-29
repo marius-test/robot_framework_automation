@@ -1,2 +1,2 @@
-TODO add documentation to each test suite
-TODO redo the login tests with Test Template in the Settings section
+TODO create separate login and inventory tests using Test Template in the Settings section
+TODO add Name and Documentation to test suites
