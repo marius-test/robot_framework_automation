@@ -1,5 +1,6 @@
 *** Settings ***
-Resource    ../resources/variables.resource
+Name    Full Inventory Items Check
+Documentation    Data-driven test using a FOR loop to validate each inventory item's Name, Description, and Price against expected values.
 Variables    ../resources/expected_values.py
 Resource    ../resources/keywords.resource
 Test Teardown    Close Browser

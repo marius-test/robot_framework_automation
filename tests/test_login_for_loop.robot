@@ -1,5 +1,6 @@
 *** Settings ***
-Resource    ../resources/variables.resource
+Name    Login Test - Multiple Users (Positive & Negative)
+Documentation    Data-driven login tests using FOR loops to validate both successful and failed login attempts across multiple user types.
 Resource    ../resources/expected_values.resource
 Resource    ../resources/keywords.resource
 Test Teardown    Close Browser
