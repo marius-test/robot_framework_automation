@@ -1,652 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.3 on win32)" generated="2025-08-29T07:58:14.537665" rpa="false" schemaversion="5">
-<suite id="s1" name="Test Inventory" source="C:\Users\marius\python\robot_framework_automation\tests\test_inventory.robot">
-<test id="s1-t1" name="Test Inventory Items Are Displayed" line="8">
-<kw name="validate inventory items" owner="keywords">
-<kw name="open inventory page" owner="keywords">
-<kw name="login" owner="keywords">
+<robot generator="Robot 7.3.2 (Python 3.13.3 on win32)" generated="2025-09-09T12:50:09.033482" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Sanity" source="C:\Users\marius\python\robot_framework_automation\tests\test_sanity.robot">
+<test id="s1-t1" name="Test Sanity" line="8">
 <kw name="open login page" owner="keywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-08-29T07:58:14.798751" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
-<msg time="2025-08-29T07:58:14.800138" level="DEBUG">Selenium Manager binary found at: C:\Users\marius\python\robot_framework_automation\robot-env\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe</msg>
-<msg time="2025-08-29T07:58:14.800219" level="DEBUG">Executing process: C:\Users\marius\python\robot_framework_automation\robot-env\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --debug --language-binding python --output json</msg>
-<msg time="2025-08-29T07:58:14.857445" level="DEBUG">chromedriver not found in PATH</msg>
-<msg time="2025-08-29T07:58:14.857548" level="DEBUG">chrome detected at C:\Program Files\Google\Chrome\Application\chrome.exe</msg>
-<msg time="2025-08-29T07:58:14.857593" level="DEBUG">Detected browser: chrome 139.0.7258.139</msg>
-<msg time="2025-08-29T07:58:14.857630" level="DEBUG">Required driver: chromedriver 139.0.7258.154</msg>
-<msg time="2025-08-29T07:58:14.857663" level="DEBUG">chromedriver 139.0.7258.154 already in the cache</msg>
-<msg time="2025-08-29T07:58:14.857694" level="DEBUG">Driver path: C:\Users\marius\.cache\selenium\chromedriver\win64\139.0.7258.154\chromedriver.exe</msg>
-<msg time="2025-08-29T07:58:14.857724" level="DEBUG">Browser path: C:\Program Files\Google\Chrome\Application\chrome.exe</msg>
-<msg time="2025-08-29T07:58:14.861708" level="DEBUG">Started executable: `C:\Users\marius\.cache\selenium\chromedriver\win64\139.0.7258.154\chromedriver.exe` in a child process with pid: 22312 using 0 to output -3</msg>
-<msg time="2025-08-29T07:58:15.378001" level="DEBUG">POST http://localhost:54475/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': &lt;PageLoadStrategy.normal: 'normal'&gt;, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', 'args': []}}}}</msg>
-<msg time="2025-08-29T07:58:15.378470" level="DEBUG">Starting new HTTP connection (1): localhost:54475</msg>
-<msg time="2025-08-29T07:58:15.927623" level="DEBUG">http://localhost:54475 "POST /session HTTP/1.1" 200 0</msg>
-<msg time="2025-08-29T07:58:15.927748" level="DEBUG">Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"139.0.7258.139","chrome":{"chromedriverVersion":"139.0.7258.154 (9e0d6b2b47ffb17007b713429c9a302f9e43847f-refs/branch-heads/7258@{#2926})","userDataDir":"C:\\Users\\marius\\AppData\\Local\\Temp\\scoped_dir22312_410283882"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:54478"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"966f726a50fe262da84dc6146f26d70f"}} | headers=HTTPHeaderDict({'Content-Length': '884', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
-<msg time="2025-08-29T07:58:15.927822" level="DEBUG">Finished Request</msg>
-<msg time="2025-08-29T07:58:15.927954" level="DEBUG">POST http://localhost:54475/session/966f726a50fe262da84dc6146f26d70f/timeouts {'script': 5000}</msg>
-<msg time="2025-08-29T07:58:15.928548" level="DEBUG">http://localhost:54475 "POST /session/966f726a50fe262da84dc6146f26d70f/timeouts HTTP/1.1" 200 0</msg>
-<msg time="2025-08-29T07:58:15.928623" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
-<msg time="2025-08-29T07:58:15.928677" level="DEBUG">Finished Request</msg>
-<msg time="2025-08-29T07:58:15.928746" level="DEBUG">POST http://localhost:54475/session/966f726a50fe262da84dc6146f26d70f/timeouts {'implicit': 0}</msg>
-<msg time="2025-08-29T07:58:15.929170" level="DEBUG">http://localhost:54475 "POST /session/966f726a50fe262da84dc6146f26d70f/timeouts HTTP/1.1" 200 0</msg>
-<msg time="2025-08-29T07:58:15.929237" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
-<msg time="2025-08-29T07:58:15.929289" level="DEBUG">Finished Request</msg>
-<msg time="2025-08-29T07:58:15.929353" level="DEBUG">POST http://localhost:54475/session/966f726a50fe262da84dc6146f26d70f/timeouts {'pageLoad': 300000}</msg>
-<msg time="2025-08-29T07:58:15.929768" level="DEBUG">http://localhost:54475 "POST /session/966f726a50fe262da84dc6146f26d70f/timeouts HTTP/1.1" 200 0</msg>
-<msg time="2025-08-29T07:58:15.929834" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
-<msg time="2025-08-29T07:58:15.929882" level="DEBUG">Finished Request</msg>
-<msg time="2025-08-29T07:58:15.929953" level="DEBUG">POST http://localhost:54475/session/966f726a50fe262da84dc6146f26d70f/url {'url': 'https://www.saucedemo.com/'}</msg>
-<msg time="2025-08-29T07:58:17.158858" level="DEBUG">http://localhost:54475 "POST /session/966f726a50fe262da84dc6146f26d70f/url HTTP/1.1" 200 0</msg>
-<msg time="2025-08-29T07:58:17.158989" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
-<msg time="2025-08-29T07:58:17.159060" level="DEBUG">Finished Request</msg>
-<msg time="2025-08-29T07:58:17.159112" level="DEBUG">Opened browser with session id 966f726a50fe262da84dc6146f26d70f.</msg>
+<msg time="2025-09-09T12:50:09.375596" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<msg time="2025-09-09T12:50:09.379627" level="DEBUG">Selenium Manager binary found at: C:\Users\marius\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe</msg>
+<msg time="2025-09-09T12:50:09.379901" level="DEBUG">Executing process: C:\Users\marius\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --debug --language-binding python --output json</msg>
+<msg time="2025-09-09T12:50:11.258748" level="DEBUG">Sending stats to Plausible: Props { browser: "chrome", browser_version: "", os: "windows", arch: "x86_64", lang: "python", selenium_version: "4.35" }</msg>
+<msg time="2025-09-09T12:50:11.258871" level="DEBUG">chromedriver not found in PATH</msg>
+<msg time="2025-09-09T12:50:11.258919" level="DEBUG">chrome detected at C:\Program Files\Google\Chrome\Application\chrome.exe</msg>
+<msg time="2025-09-09T12:50:11.258960" level="DEBUG">Detected browser: chrome 139.0.7258.155</msg>
+<msg time="2025-09-09T12:50:11.259000" level="DEBUG">Discovering versions from https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json</msg>
+<msg time="2025-09-09T12:50:11.259034" level="DEBUG">Required driver: chromedriver 139.0.7258.154</msg>
+<msg time="2025-09-09T12:50:11.259066" level="DEBUG">chromedriver 139.0.7258.154 already in the cache</msg>
+<msg time="2025-09-09T12:50:11.259096" level="DEBUG">Driver path: C:\Users\marius\.cache\selenium\chromedriver\win64\139.0.7258.154\chromedriver.exe</msg>
+<msg time="2025-09-09T12:50:11.259128" level="DEBUG">Browser path: C:\Program Files\Google\Chrome\Application\chrome.exe</msg>
+<msg time="2025-09-09T12:50:11.324470" level="DEBUG">Started executable: `C:\Users\marius\.cache\selenium\chromedriver\win64\139.0.7258.154\chromedriver.exe` in a child process with pid: 22048 using 0 to output -3</msg>
+<msg time="2025-09-09T12:50:11.841865" level="DEBUG">POST http://localhost:63740/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': &lt;PageLoadStrategy.normal: 'normal'&gt;, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', 'args': []}}}}</msg>
+<msg time="2025-09-09T12:50:11.842314" level="DEBUG">Starting new HTTP connection (1): localhost:63740</msg>
+<msg time="2025-09-09T12:50:12.538534" level="DEBUG">http://localhost:63740 "POST /session HTTP/1.1" 200 0</msg>
+<msg time="2025-09-09T12:50:12.538687" level="DEBUG">Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"139.0.7258.155","chrome":{"chromedriverVersion":"139.0.7258.154 (9e0d6b2b47ffb17007b713429c9a302f9e43847f-refs/branch-heads/7258@{#2926})","userDataDir":"C:\\Users\\marius\\AppData\\Local\\Temp\\scoped_dir22048_1330024220"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:63745"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"4308d00e06a1f84c45893e46823122a4"}} | headers=HTTPHeaderDict({'Content-Length': '885', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-09-09T12:50:12.538779" level="DEBUG">Finished Request</msg>
+<msg time="2025-09-09T12:50:12.538926" level="DEBUG">POST http://localhost:63740/session/4308d00e06a1f84c45893e46823122a4/timeouts {'script': 5000}</msg>
+<msg time="2025-09-09T12:50:12.539631" level="DEBUG">http://localhost:63740 "POST /session/4308d00e06a1f84c45893e46823122a4/timeouts HTTP/1.1" 200 0</msg>
+<msg time="2025-09-09T12:50:12.539718" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-09-09T12:50:12.539782" level="DEBUG">Finished Request</msg>
+<msg time="2025-09-09T12:50:12.539864" level="DEBUG">POST http://localhost:63740/session/4308d00e06a1f84c45893e46823122a4/timeouts {'implicit': 0}</msg>
+<msg time="2025-09-09T12:50:12.540343" level="DEBUG">http://localhost:63740 "POST /session/4308d00e06a1f84c45893e46823122a4/timeouts HTTP/1.1" 200 0</msg>
+<msg time="2025-09-09T12:50:12.540421" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-09-09T12:50:12.540486" level="DEBUG">Finished Request</msg>
+<msg time="2025-09-09T12:50:12.540566" level="DEBUG">POST http://localhost:63740/session/4308d00e06a1f84c45893e46823122a4/timeouts {'pageLoad': 300000}</msg>
+<msg time="2025-09-09T12:50:12.541073" level="DEBUG">http://localhost:63740 "POST /session/4308d00e06a1f84c45893e46823122a4/timeouts HTTP/1.1" 200 0</msg>
+<msg time="2025-09-09T12:50:12.541152" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-09-09T12:50:12.541209" level="DEBUG">Finished Request</msg>
+<msg time="2025-09-09T12:50:12.541296" level="DEBUG">POST http://localhost:63740/session/4308d00e06a1f84c45893e46823122a4/url {'url': 'https://www.saucedemo.com/'}</msg>
+<msg time="2025-09-09T12:50:13.801676" level="DEBUG">http://localhost:63740 "POST /session/4308d00e06a1f84c45893e46823122a4/url HTTP/1.1" 200 0</msg>
+<msg time="2025-09-09T12:50:13.801811" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-09-09T12:50:13.801888" level="DEBUG">Finished Request</msg>
+<msg time="2025-09-09T12:50:13.801944" level="DEBUG">Opened browser with session id 4308d00e06a1f84c45893e46823122a4.</msg>
 <arg>${BASE_URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-08-29T07:58:14.798575" elapsed="2.360605"/>
+<status status="PASS" start="2025-09-09T12:50:09.375367" elapsed="4.426656"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2025-08-29T07:58:17.160035" level="DEBUG">POST http://localhost:54475/session/966f726a50fe262da84dc6146f26d70f/elements {'using': 'css selector', 'value': '.login_logo'}</msg>
-<msg time="2025-08-29T07:58:17.169773" level="DEBUG">http://localhost:54475 "POST /session/966f726a50fe262da84dc6146f26d70f/elements HTTP/1.1" 200 0</msg>
-<msg time="2025-08-29T07:58:17.169889" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.10"}]} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
-<msg time="2025-08-29T07:58:17.169947" level="DEBUG">Finished Request</msg>
-<msg time="2025-08-29T07:58:17.170426" level="DEBUG">POST http://localhost:54475/session/966f726a50fe262da84dc6146f26d70f/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.10'}]}</msg>
-<msg time="2025-08-29T07:58:17.177188" level="DEBUG">http://localhost:54475 "POST /session/966f726a50fe262da84dc6146f26d70f/execute/sync HTTP/1.1" 200 0</msg>
-<msg time="2025-08-29T07:58:17.177388" level="DEBUG">Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
-<msg time="2025-08-29T07:58:17.177448" level="DEBUG">Finished Request</msg>
+<msg time="2025-09-09T12:50:13.802950" level="DEBUG">POST http://localhost:63740/session/4308d00e06a1f84c45893e46823122a4/elements {'using': 'css selector', 'value': '.login_logo'}</msg>
+<msg time="2025-09-09T12:50:13.810221" level="DEBUG">http://localhost:63740 "POST /session/4308d00e06a1f84c45893e46823122a4/elements HTTP/1.1" 200 0</msg>
+<msg time="2025-09-09T12:50:13.810503" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.7F35F18E04C21D9B20EAE59306969499.d.CF7F84BC35DACA3579D64778DA0D7164.e.10"}]} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-09-09T12:50:13.810600" level="DEBUG">Finished Request</msg>
+<msg time="2025-09-09T12:50:13.858175" level="DEBUG">POST http://localhost:63740/session/4308d00e06a1f84c45893e46823122a4/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.7F35F18E04C21D9B20EAE59306969499.d.CF7F84BC35DACA3579D64778DA0D7164.e.10'}]}</msg>
+<msg time="2025-09-09T12:50:13.866916" level="DEBUG">http://localhost:63740 "POST /session/4308d00e06a1f84c45893e46823122a4/execute/sync HTTP/1.1" 200 0</msg>
+<msg time="2025-09-09T12:50:13.867040" level="DEBUG">Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-09-09T12:50:13.867101" level="DEBUG">Finished Request</msg>
 <arg>${LOGIN_LOGO}</arg>
 <arg>timeout=${DEFAULT_TIMEOUT}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.159384" elapsed="0.018140"/>
+<status status="PASS" start="2025-09-09T12:50:13.802238" elapsed="0.064943"/>
 </kw>
-<status status="PASS" start="2025-08-29T07:58:14.798112" elapsed="2.379527"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-08-29T07:58:17.177979" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
-<msg time="2025-08-29T07:58:17.178081" level="DEBUG">POST http://localhost:54475/session/966f726a50fe262da84dc6146f26d70f/elements {'using': 'css selector', 'value': '[id="user-name"]'}</msg>
-<msg time="2025-08-29T07:58:17.185809" level="DEBUG">http://localhost:54475 "POST /session/966f726a50fe262da84dc6146f26d70f/elements HTTP/1.1" 200 0</msg>
-<msg time="2025-08-29T07:58:17.185920" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.3"}]} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
-<msg time="2025-08-29T07:58:17.185977" level="DEBUG">Finished Request</msg>
-<msg time="2025-08-29T07:58:17.186067" level="DEBUG">POST http://localhost:54475/session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.3/clear {}</msg>
-<msg time="2025-08-29T07:58:17.209460" level="DEBUG">http://localhost:54475 "POST /session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.3/clear HTTP/1.1" 200 0</msg>
-<msg time="2025-08-29T07:58:17.209571" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
-<msg time="2025-08-29T07:58:17.209626" level="DEBUG">Finished Request</msg>
-<msg time="2025-08-29T07:58:17.209725" level="DEBUG">POST http://localhost:54475/session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.3/value {'text': 'standard_user', 'value': ['s', 't', 'a', 'n', 'd', 'a', 'r', 'd', '_', 'u', 's', 'e', 'r']}</msg>
-<msg time="2025-08-29T07:58:17.272541" level="DEBUG">http://localhost:54475 "POST /session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.3/value HTTP/1.1" 200 0</msg>
-<msg time="2025-08-29T07:58:17.272656" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
-<msg time="2025-08-29T07:58:17.272713" level="DEBUG">Finished Request</msg>
-<arg>${USERNAME_FIELD}</arg>
-<arg>${username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.177757" elapsed="0.095019"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-08-29T07:58:17.273155" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
-<msg time="2025-08-29T07:58:17.273249" level="DEBUG">POST http://localhost:54475/session/966f726a50fe262da84dc6146f26d70f/elements {'using': 'css selector', 'value': '[id="password"]'}</msg>
-<msg time="2025-08-29T07:58:17.279605" level="DEBUG">http://localhost:54475 "POST /session/966f726a50fe262da84dc6146f26d70f/elements HTTP/1.1" 200 0</msg>
-<msg time="2025-08-29T07:58:17.279726" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.4"}]} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
-<msg time="2025-08-29T07:58:17.279796" level="DEBUG">Finished Request</msg>
-<msg time="2025-08-29T07:58:17.279900" level="DEBUG">POST http://localhost:54475/session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.4/clear {}</msg>
-<msg time="2025-08-29T07:58:17.293231" level="DEBUG">http://localhost:54475 "POST /session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.4/clear HTTP/1.1" 200 0</msg>
-<msg time="2025-08-29T07:58:17.293351" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
-<msg time="2025-08-29T07:58:17.293408" level="DEBUG">Finished Request</msg>
-<msg time="2025-08-29T07:58:17.293509" level="DEBUG">POST http://localhost:54475/session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.4/value {'text': 'secret_sauce', 'value': ['s', 'e', 'c', 'r', 'e', 't', '_', 's', 'a', 'u', 'c', 'e']}</msg>
-<msg time="2025-08-29T07:58:17.325667" level="DEBUG">http://localhost:54475 "POST /session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.4/value HTTP/1.1" 200 0</msg>
-<msg time="2025-08-29T07:58:17.325851" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
-<msg time="2025-08-29T07:58:17.325941" level="DEBUG">Finished Request</msg>
-<arg>${PASSWORD_FIELD}</arg>
-<arg>${password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.272933" elapsed="0.053077"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-08-29T07:58:17.326360" level="INFO">Clicking button 'id=login-button'.</msg>
-<msg time="2025-08-29T07:58:17.326454" level="DEBUG">POST http://localhost:54475/session/966f726a50fe262da84dc6146f26d70f/elements {'using': 'css selector', 'value': '[id="login-button"]'}</msg>
-<msg time="2025-08-29T07:58:17.332767" level="DEBUG">http://localhost:54475 "POST /session/966f726a50fe262da84dc6146f26d70f/elements HTTP/1.1" 200 0</msg>
-<msg time="2025-08-29T07:58:17.332867" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.5"}]} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
-<msg time="2025-08-29T07:58:17.332933" level="DEBUG">Finished Request</msg>
-<msg time="2025-08-29T07:58:17.333028" level="DEBUG">GET http://localhost:54475/session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.5/name {}</msg>
-<msg time="2025-08-29T07:58:17.335703" level="DEBUG">http://localhost:54475 "GET /session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.5/name HTTP/1.1" 200 0</msg>
-<msg time="2025-08-29T07:58:17.335804" level="DEBUG">Remote response: status=200 | data={"value":"input"} | headers=HTTPHeaderDict({'Content-Length': '17', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
-<msg time="2025-08-29T07:58:17.335873" level="DEBUG">Finished Request</msg>
-<msg time="2025-08-29T07:58:17.335961" level="DEBUG">POST http://localhost:54475/session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.5/click {}</msg>
-<msg time="2025-08-29T07:58:17.390797" level="DEBUG">http://localhost:54475 "POST /session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.5/click HTTP/1.1" 200 0</msg>
-<msg time="2025-08-29T07:58:17.390929" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
-<msg time="2025-08-29T07:58:17.390990" level="DEBUG">Finished Request</msg>
-<arg>${LOGIN_BUTTON}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.326158" elapsed="0.064895"/>
-</kw>
-<arg>${username}</arg>
-<arg>${password}</arg>
-<status status="PASS" start="2025-08-29T07:58:14.797917" elapsed="2.593233"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2025-08-29T07:58:17.391661" level="DEBUG">POST http://localhost:54475/session/966f726a50fe262da84dc6146f26d70f/elements {'using': 'css selector', 'value': '.app_logo'}</msg>
-<msg time="2025-08-29T07:58:17.399291" level="DEBUG">http://localhost:54475 "POST /session/966f726a50fe262da84dc6146f26d70f/elements HTTP/1.1" 200 0</msg>
-<msg time="2025-08-29T07:58:17.399409" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.19"}]} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
-<msg time="2025-08-29T07:58:17.399468" level="DEBUG">Finished Request</msg>
-<msg time="2025-08-29T07:58:17.399608" level="DEBUG">POST http://localhost:54475/session/966f726a50fe262da84dc6146f26d70f/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.19'}]}</msg>
-<msg time="2025-08-29T07:58:17.404527" level="DEBUG">http://localhost:54475 "POST /session/966f726a50fe262da84dc6146f26d70f/execute/sync HTTP/1.1" 200 0</msg>
-<msg time="2025-08-29T07:58:17.404660" level="DEBUG">Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
-<msg time="2025-08-29T07:58:17.404718" level="DEBUG">Finished Request</msg>
-<arg>${APP_LOGO}</arg>
-<arg>timeout=${DEFAULT_TIMEOUT}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.391283" elapsed="0.013505"/>
-</kw>
-<arg>${username}</arg>
-<arg>${password}</arg>
-<status status="PASS" start="2025-08-29T07:58:14.797669" elapsed="2.607229"/>
-</kw>
-<kw name="Get WebElements" owner="SeleniumLibrary">
-<msg time="2025-08-29T07:58:17.405288" level="DEBUG">POST http://localhost:54475/session/966f726a50fe262da84dc6146f26d70f/elements {'using': 'css selector', 'value': '.inventory_item_name'}</msg>
-<msg time="2025-08-29T07:58:17.411986" level="DEBUG">http://localhost:54475 "POST /session/966f726a50fe262da84dc6146f26d70f/elements HTTP/1.1" 200 0</msg>
-<msg time="2025-08-29T07:58:17.412158" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.20"},{"element-6066-11e4-a52e-4f735466cecf":"f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.21"},{"element-6066-11e4-a52e-4f735466cecf":"f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.22"},{"element-6066-11e4-a52e-4f735466cecf":"f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.23"},{"element-6066-11e4-a52e-4f735466cecf":"f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.24"},{"element-6066-11e4-a52e-4f735466cecf":"f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.25"}]} | headers=HTTPHeaderDict({'Content-Length': '713', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
-<msg time="2025-08-29T07:58:17.412244" level="DEBUG">Finished Request</msg>
-<msg time="2025-08-29T07:58:17.412415" level="INFO">${names} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="966f726a50fe262da84dc6146f26d70f", element="f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.20")&gt;, &lt;selenium.webdriv...</msg>
-<var>${names}</var>
-<arg>${ITEM_NAME}</arg>
-<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.405026" elapsed="0.007421"/>
-</kw>
-<kw name="Get WebElements" owner="SeleniumLibrary">
-<msg time="2025-08-29T07:58:17.412872" level="DEBUG">POST http://localhost:54475/session/966f726a50fe262da84dc6146f26d70f/elements {'using': 'css selector', 'value': '.inventory_item_desc'}</msg>
-<msg time="2025-08-29T07:58:17.419615" level="DEBUG">http://localhost:54475 "POST /session/966f726a50fe262da84dc6146f26d70f/elements HTTP/1.1" 200 0</msg>
-<msg time="2025-08-29T07:58:17.419746" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.26"},{"element-6066-11e4-a52e-4f735466cecf":"f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.27"},{"element-6066-11e4-a52e-4f735466cecf":"f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.28"},{"element-6066-11e4-a52e-4f735466cecf":"f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.29"},{"element-6066-11e4-a52e-4f735466cecf":"f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.30"},{"element-6066-11e4-a52e-4f735466cecf":"f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.31"}]} | headers=HTTPHeaderDict({'Content-Length': '713', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
-<msg time="2025-08-29T07:58:17.419820" level="DEBUG">Finished Request</msg>
-<msg time="2025-08-29T07:58:17.419978" level="INFO">${descriptions} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="966f726a50fe262da84dc6146f26d70f", element="f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.26")&gt;, &lt;selenium.webdriv...</msg>
-<var>${descriptions}</var>
-<arg>${ITEM_DESCRIPTION}</arg>
-<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.412599" elapsed="0.007412"/>
-</kw>
-<kw name="Get WebElements" owner="SeleniumLibrary">
-<msg time="2025-08-29T07:58:17.420453" level="DEBUG">POST http://localhost:54475/session/966f726a50fe262da84dc6146f26d70f/elements {'using': 'css selector', 'value': '.inventory_item_price'}</msg>
-<msg time="2025-08-29T07:58:17.427417" level="DEBUG">http://localhost:54475 "POST /session/966f726a50fe262da84dc6146f26d70f/elements HTTP/1.1" 200 0</msg>
-<msg time="2025-08-29T07:58:17.427534" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.32"},{"element-6066-11e4-a52e-4f735466cecf":"f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.33"},{"element-6066-11e4-a52e-4f735466cecf":"f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.34"},{"element-6066-11e4-a52e-4f735466cecf":"f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.35"},{"element-6066-11e4-a52e-4f735466cecf":"f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.36"},{"element-6066-11e4-a52e-4f735466cecf":"f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.37"}]} | headers=HTTPHeaderDict({'Content-Length': '713', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
-<msg time="2025-08-29T07:58:17.427596" level="DEBUG">Finished Request</msg>
-<msg time="2025-08-29T07:58:17.427758" level="INFO">${prices} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="966f726a50fe262da84dc6146f26d70f", element="f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.32")&gt;, &lt;selenium.webdriv...</msg>
-<var>${prices}</var>
-<arg>${ITEM_PRICE}</arg>
-<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.420177" elapsed="0.007613"/>
-</kw>
-<kw name="Get Length" owner="BuiltIn">
-<msg time="2025-08-29T07:58:17.428113" level="INFO">Length is 6.</msg>
-<msg time="2025-08-29T07:58:17.428172" level="INFO">${c} = 6</msg>
-<var>${c}</var>
-<arg>${expected_items}</arg>
-<doc>Returns and logs the length of the given item as an integer.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.427970" elapsed="0.000223"/>
-</kw>
-<for flavor="IN RANGE">
-<iter>
-<kw name="Get From List" owner="Collections">
-<msg time="2025-08-29T07:58:17.428697" level="INFO">${expected} = {'name': 'Sauce Labs Backpack', 'description': 'carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.', 'price': '$29.9...</msg>
-<var>${expected}</var>
-<arg>${expected_items}</arg>
-<arg>${i}</arg>
-<doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.428543" elapsed="0.000182"/>
+<status status="PASS" start="2025-09-09T12:50:09.374607" elapsed="4.492688"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-08-29T07:58:17.429177" level="DEBUG">GET http://localhost:54475/session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.20/text {}</msg>
-<msg time="2025-08-29T07:58:17.437976" level="DEBUG">http://localhost:54475 "GET /session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.20/text HTTP/1.1" 200 0</msg>
-<msg time="2025-08-29T07:58:17.438093" level="DEBUG">Remote response: status=200 | data={"value":"Sauce Labs Backpack"} | headers=HTTPHeaderDict({'Content-Length': '31', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
-<msg time="2025-08-29T07:58:17.438151" level="DEBUG">Finished Request</msg>
-<msg time="2025-08-29T07:58:17.438257" level="INFO">${name} = Sauce Labs Backpack</msg>
-<var>${name}</var>
-<arg>${names}[${i}]</arg>
+<msg time="2025-09-09T12:50:13.867703" level="DEBUG">POST http://localhost:63740/session/4308d00e06a1f84c45893e46823122a4/elements {'using': 'css selector', 'value': '.login_logo'}</msg>
+<msg time="2025-09-09T12:50:13.871851" level="DEBUG">http://localhost:63740 "POST /session/4308d00e06a1f84c45893e46823122a4/elements HTTP/1.1" 200 0</msg>
+<msg time="2025-09-09T12:50:13.871987" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.7F35F18E04C21D9B20EAE59306969499.d.CF7F84BC35DACA3579D64778DA0D7164.e.10"}]} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-09-09T12:50:13.872052" level="DEBUG">Finished Request</msg>
+<msg time="2025-09-09T12:50:13.872148" level="DEBUG">GET http://localhost:63740/session/4308d00e06a1f84c45893e46823122a4/element/f.7F35F18E04C21D9B20EAE59306969499.d.CF7F84BC35DACA3579D64778DA0D7164.e.10/text {}</msg>
+<msg time="2025-09-09T12:50:13.882479" level="DEBUG">http://localhost:63740 "GET /session/4308d00e06a1f84c45893e46823122a4/element/f.7F35F18E04C21D9B20EAE59306969499.d.CF7F84BC35DACA3579D64778DA0D7164.e.10/text HTTP/1.1" 200 0</msg>
+<msg time="2025-09-09T12:50:13.882598" level="DEBUG">Remote response: status=200 | data={"value":"Swag Labs"} | headers=HTTPHeaderDict({'Content-Length': '21', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-09-09T12:50:13.882655" level="DEBUG">Finished Request</msg>
+<msg time="2025-09-09T12:50:13.882777" level="INFO">${actual_login_logo_text} = Swag Labs</msg>
+<var>${actual_login_logo_text}</var>
+<arg>${LOGIN_LOGO}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.428814" elapsed="0.009467"/>
-</kw>
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-08-29T07:58:17.438695" level="DEBUG">GET http://localhost:54475/session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.26/text {}</msg>
-<msg time="2025-08-29T07:58:17.444127" level="DEBUG">http://localhost:54475 "GET /session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.26/text HTTP/1.1" 200 0</msg>
-<msg time="2025-08-29T07:58:17.444264" level="DEBUG">Remote response: status=200 | data={"value":"carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection."} | headers=HTTPHeaderDict({'Content-Length': '146', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
-<msg time="2025-08-29T07:58:17.444334" level="DEBUG">Finished Request</msg>
-<msg time="2025-08-29T07:58:17.444459" level="INFO">${description} = carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.</msg>
-<var>${description}</var>
-<arg>${descriptions}[${i}]</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.438433" elapsed="0.006056"/>
-</kw>
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-08-29T07:58:17.444942" level="DEBUG">GET http://localhost:54475/session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.32/text {}</msg>
-<msg time="2025-08-29T07:58:17.449347" level="DEBUG">http://localhost:54475 "GET /session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.32/text HTTP/1.1" 200 0</msg>
-<msg time="2025-08-29T07:58:17.449424" level="DEBUG">Remote response: status=200 | data={"value":"$29.99"} | headers=HTTPHeaderDict({'Content-Length': '18', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
-<msg time="2025-08-29T07:58:17.449476" level="DEBUG">Finished Request</msg>
-<msg time="2025-08-29T07:58:17.449553" level="INFO">${price} = $29.99</msg>
-<var>${price}</var>
-<arg>${prices}[${i}]</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.444669" elapsed="0.004907"/>
+<status status="PASS" start="2025-09-09T12:50:13.867423" elapsed="0.015378"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
-<msg time="2025-08-29T07:58:17.450300" level="DEBUG">Argument types are:
+<msg time="2025-09-09T12:50:13.883146" level="DEBUG">Argument types are:
 &lt;class 'str'&gt;
 &lt;class 'str'&gt;</msg>
-<arg>${name}</arg>
-<arg>${expected['name']}</arg>
+<arg>${LOGIN_LOGO_TEXT}</arg>
+<arg>${actual_login_logo_text}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.449702" elapsed="0.000655"/>
-</kw>
-<kw name="Should Be Equal" owner="BuiltIn">
-<msg time="2025-08-29T07:58:17.450947" level="DEBUG">Argument types are:
-&lt;class 'str'&gt;
-&lt;class 'str'&gt;</msg>
-<arg>${description}</arg>
-<arg>${expected['description']}</arg>
-<doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.450495" elapsed="0.000498"/>
-</kw>
-<kw name="Should Be Equal" owner="BuiltIn">
-<msg time="2025-08-29T07:58:17.451438" level="DEBUG">Argument types are:
-&lt;class 'str'&gt;
-&lt;class 'str'&gt;</msg>
-<arg>${price}</arg>
-<arg>${expected['price']}</arg>
-<doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.451091" elapsed="0.000386"/>
-</kw>
-<var name="${i}">0</var>
-<status status="PASS" start="2025-08-29T07:58:17.428452" elapsed="0.023063"/>
-</iter>
-<iter>
-<kw name="Get From List" owner="Collections">
-<msg time="2025-08-29T07:58:17.451862" level="INFO">${expected} = {'name': 'Sauce Labs Bike Light', 'description': "A red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery ...</msg>
-<var>${expected}</var>
-<arg>${expected_items}</arg>
-<arg>${i}</arg>
-<doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.451716" elapsed="0.000170"/>
-</kw>
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-08-29T07:58:17.452199" level="DEBUG">GET http://localhost:54475/session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.21/text {}</msg>
-<msg time="2025-08-29T07:58:17.456669" level="DEBUG">http://localhost:54475 "GET /session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.21/text HTTP/1.1" 200 0</msg>
-<msg time="2025-08-29T07:58:17.456763" level="DEBUG">Remote response: status=200 | data={"value":"Sauce Labs Bike Light"} | headers=HTTPHeaderDict({'Content-Length': '33', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
-<msg time="2025-08-29T07:58:17.456825" level="DEBUG">Finished Request</msg>
-<msg time="2025-08-29T07:58:17.456926" level="INFO">${name} = Sauce Labs Bike Light</msg>
-<var>${name}</var>
-<arg>${names}[${i}]</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.451970" elapsed="0.004983"/>
-</kw>
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-08-29T07:58:17.457317" level="DEBUG">GET http://localhost:54475/session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.27/text {}</msg>
-<msg time="2025-08-29T07:58:17.461483" level="DEBUG">http://localhost:54475 "GET /session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.27/text HTTP/1.1" 200 0</msg>
-<msg time="2025-08-29T07:58:17.461559" level="DEBUG">Remote response: status=200 | data={"value":"A red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included."} | headers=HTTPHeaderDict({'Content-Length': '171', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
-<msg time="2025-08-29T07:58:17.461615" level="DEBUG">Finished Request</msg>
-<msg time="2025-08-29T07:58:17.461709" level="INFO">${description} = A red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included.</msg>
-<var>${description}</var>
-<arg>${descriptions}[${i}]</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.457070" elapsed="0.004668"/>
-</kw>
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-08-29T07:58:17.462097" level="DEBUG">GET http://localhost:54475/session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.33/text {}</msg>
-<msg time="2025-08-29T07:58:17.466226" level="DEBUG">http://localhost:54475 "GET /session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.33/text HTTP/1.1" 200 0</msg>
-<msg time="2025-08-29T07:58:17.466301" level="DEBUG">Remote response: status=200 | data={"value":"$9.99"} | headers=HTTPHeaderDict({'Content-Length': '17', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
-<msg time="2025-08-29T07:58:17.466355" level="DEBUG">Finished Request</msg>
-<msg time="2025-08-29T07:58:17.466429" level="INFO">${price} = $9.99</msg>
-<var>${price}</var>
-<arg>${prices}[${i}]</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.461861" elapsed="0.004590"/>
-</kw>
-<kw name="Should Be Equal" owner="BuiltIn">
-<msg time="2025-08-29T07:58:17.466971" level="DEBUG">Argument types are:
-&lt;class 'str'&gt;
-&lt;class 'str'&gt;</msg>
-<arg>${name}</arg>
-<arg>${expected['name']}</arg>
-<doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.466550" elapsed="0.000467"/>
-</kw>
-<kw name="Should Be Equal" owner="BuiltIn">
-<msg time="2025-08-29T07:58:17.467441" level="DEBUG">Argument types are:
-&lt;class 'str'&gt;
-&lt;class 'str'&gt;</msg>
-<arg>${description}</arg>
-<arg>${expected['description']}</arg>
-<doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.467108" elapsed="0.000372"/>
-</kw>
-<kw name="Should Be Equal" owner="BuiltIn">
-<msg time="2025-08-29T07:58:17.467902" level="DEBUG">Argument types are:
-&lt;class 'str'&gt;
-&lt;class 'str'&gt;</msg>
-<arg>${price}</arg>
-<arg>${expected['price']}</arg>
-<doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.467562" elapsed="0.000378"/>
-</kw>
-<var name="${i}">1</var>
-<status status="PASS" start="2025-08-29T07:58:17.451640" elapsed="0.016338"/>
-</iter>
-<iter>
-<kw name="Get From List" owner="Collections">
-<msg time="2025-08-29T07:58:17.468285" level="INFO">${expected} = {'name': 'Sauce Labs Bolt T-Shirt', 'description': 'Get your testing superhero on with the Sauce Labs bolt T-shirt. From American Apparel, 100% ringspun combed cotton, heather gray with red bolt.', 'p...</msg>
-<var>${expected}</var>
-<arg>${expected_items}</arg>
-<arg>${i}</arg>
-<doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.468157" elapsed="0.000149"/>
-</kw>
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-08-29T07:58:17.468582" level="DEBUG">GET http://localhost:54475/session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.22/text {}</msg>
-<msg time="2025-08-29T07:58:17.472922" level="DEBUG">http://localhost:54475 "GET /session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.22/text HTTP/1.1" 200 0</msg>
-<msg time="2025-08-29T07:58:17.473019" level="DEBUG">Remote response: status=200 | data={"value":"Sauce Labs Bolt T-Shirt"} | headers=HTTPHeaderDict({'Content-Length': '35', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
-<msg time="2025-08-29T07:58:17.473084" level="DEBUG">Finished Request</msg>
-<msg time="2025-08-29T07:58:17.473175" level="INFO">${name} = Sauce Labs Bolt T-Shirt</msg>
-<var>${name}</var>
-<arg>${names}[${i}]</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.468384" elapsed="0.004818"/>
-</kw>
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-08-29T07:58:17.473559" level="DEBUG">GET http://localhost:54475/session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.28/text {}</msg>
-<msg time="2025-08-29T07:58:17.477346" level="DEBUG">http://localhost:54475 "GET /session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.28/text HTTP/1.1" 200 0</msg>
-<msg time="2025-08-29T07:58:17.477417" level="DEBUG">Remote response: status=200 | data={"value":"Get your testing superhero on with the Sauce Labs bolt T-shirt. From American Apparel, 100% ringspun combed cotton, heather gray with red bolt."} | headers=HTTPHeaderDict({'Content-Length': '155', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
-<msg time="2025-08-29T07:58:17.477467" level="DEBUG">Finished Request</msg>
-<msg time="2025-08-29T07:58:17.477537" level="INFO">${description} = Get your testing superhero on with the Sauce Labs bolt T-shirt. From American Apparel, 100% ringspun combed cotton, heather gray with red bolt.</msg>
-<var>${description}</var>
-<arg>${descriptions}[${i}]</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.473322" elapsed="0.004237"/>
-</kw>
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-08-29T07:58:17.477842" level="DEBUG">GET http://localhost:54475/session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.34/text {}</msg>
-<msg time="2025-08-29T07:58:17.481854" level="DEBUG">http://localhost:54475 "GET /session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.34/text HTTP/1.1" 200 0</msg>
-<msg time="2025-08-29T07:58:17.481941" level="DEBUG">Remote response: status=200 | data={"value":"$15.99"} | headers=HTTPHeaderDict({'Content-Length': '18', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
-<msg time="2025-08-29T07:58:17.482002" level="DEBUG">Finished Request</msg>
-<msg time="2025-08-29T07:58:17.482086" level="INFO">${price} = $15.99</msg>
-<var>${price}</var>
-<arg>${prices}[${i}]</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.477652" elapsed="0.004461"/>
-</kw>
-<kw name="Should Be Equal" owner="BuiltIn">
-<msg time="2025-08-29T07:58:17.482701" level="DEBUG">Argument types are:
-&lt;class 'str'&gt;
-&lt;class 'str'&gt;</msg>
-<arg>${name}</arg>
-<arg>${expected['name']}</arg>
-<doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.482229" elapsed="0.000514"/>
-</kw>
-<kw name="Should Be Equal" owner="BuiltIn">
-<msg time="2025-08-29T07:58:17.483156" level="DEBUG">Argument types are:
-&lt;class 'str'&gt;
-&lt;class 'str'&gt;</msg>
-<arg>${description}</arg>
-<arg>${expected['description']}</arg>
-<doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.482833" elapsed="0.000397"/>
-</kw>
-<kw name="Should Be Equal" owner="BuiltIn">
-<msg time="2025-08-29T07:58:17.483650" level="DEBUG">Argument types are:
-&lt;class 'str'&gt;
-&lt;class 'str'&gt;</msg>
-<arg>${price}</arg>
-<arg>${expected['price']}</arg>
-<doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.483315" elapsed="0.000373"/>
-</kw>
-<var name="${i}">2</var>
-<status status="PASS" start="2025-08-29T07:58:17.468090" elapsed="0.015635"/>
-</iter>
-<iter>
-<kw name="Get From List" owner="Collections">
-<msg time="2025-08-29T07:58:17.484028" level="INFO">${expected} = {'name': 'Sauce Labs Fleece Jacket', 'description': "It's not every day that you come across a midweight quarter-zip fleece jacket capable of handling everything from a relaxing day outdoors to a busy...</msg>
-<var>${expected}</var>
-<arg>${expected_items}</arg>
-<arg>${i}</arg>
-<doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.483900" elapsed="0.000150"/>
-</kw>
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-08-29T07:58:17.484308" level="DEBUG">GET http://localhost:54475/session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.23/text {}</msg>
-<msg time="2025-08-29T07:58:17.488364" level="DEBUG">http://localhost:54475 "GET /session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.23/text HTTP/1.1" 200 0</msg>
-<msg time="2025-08-29T07:58:17.488437" level="DEBUG">Remote response: status=200 | data={"value":"Sauce Labs Fleece Jacket"} | headers=HTTPHeaderDict({'Content-Length': '36', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
-<msg time="2025-08-29T07:58:17.488488" level="DEBUG">Finished Request</msg>
-<msg time="2025-08-29T07:58:17.488556" level="INFO">${name} = Sauce Labs Fleece Jacket</msg>
-<var>${name}</var>
-<arg>${names}[${i}]</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.484128" elapsed="0.004449"/>
-</kw>
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-08-29T07:58:17.488858" level="DEBUG">GET http://localhost:54475/session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.29/text {}</msg>
-<msg time="2025-08-29T07:58:17.492956" level="DEBUG">http://localhost:54475 "GET /session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.29/text HTTP/1.1" 200 0</msg>
-<msg time="2025-08-29T07:58:17.493041" level="DEBUG">Remote response: status=200 | data={"value":"It's not every day that you come across a midweight quarter-zip fleece jacket capable of handling everything from a relaxing day outdoors to a busy day at the office."} | headers=HTTPHeaderDict({'Content-Length': '178', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
-<msg time="2025-08-29T07:58:17.493103" level="DEBUG">Finished Request</msg>
-<msg time="2025-08-29T07:58:17.493186" level="INFO">${description} = It's not every day that you come across a midweight quarter-zip fleece jacket capable of handling everything from a relaxing day outdoors to a busy day at the office.</msg>
-<var>${description}</var>
-<arg>${descriptions}[${i}]</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.488668" elapsed="0.004546"/>
-</kw>
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-08-29T07:58:17.493540" level="DEBUG">GET http://localhost:54475/session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.35/text {}</msg>
-<msg time="2025-08-29T07:58:17.497382" level="DEBUG">http://localhost:54475 "GET /session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.35/text HTTP/1.1" 200 0</msg>
-<msg time="2025-08-29T07:58:17.497451" level="DEBUG">Remote response: status=200 | data={"value":"$49.99"} | headers=HTTPHeaderDict({'Content-Length': '18', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
-<msg time="2025-08-29T07:58:17.497499" level="DEBUG">Finished Request</msg>
-<msg time="2025-08-29T07:58:17.497565" level="INFO">${price} = $49.99</msg>
-<var>${price}</var>
-<arg>${prices}[${i}]</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.493322" elapsed="0.004264"/>
-</kw>
-<kw name="Should Be Equal" owner="BuiltIn">
-<msg time="2025-08-29T07:58:17.498060" level="DEBUG">Argument types are:
-&lt;class 'str'&gt;
-&lt;class 'str'&gt;</msg>
-<arg>${name}</arg>
-<arg>${expected['name']}</arg>
-<doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.497678" elapsed="0.000424"/>
-</kw>
-<kw name="Should Be Equal" owner="BuiltIn">
-<msg time="2025-08-29T07:58:17.498504" level="DEBUG">Argument types are:
-&lt;class 'str'&gt;
-&lt;class 'str'&gt;</msg>
-<arg>${description}</arg>
-<arg>${expected['description']}</arg>
-<doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.498187" elapsed="0.000356"/>
-</kw>
-<kw name="Should Be Equal" owner="BuiltIn">
-<msg time="2025-08-29T07:58:17.498960" level="DEBUG">Argument types are:
-&lt;class 'str'&gt;
-&lt;class 'str'&gt;</msg>
-<arg>${price}</arg>
-<arg>${expected['price']}</arg>
-<doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.498623" elapsed="0.000374"/>
-</kw>
-<var name="${i}">3</var>
-<status status="PASS" start="2025-08-29T07:58:17.483833" elapsed="0.015200"/>
-</iter>
-<iter>
-<kw name="Get From List" owner="Collections">
-<msg time="2025-08-29T07:58:17.499330" level="INFO">${expected} = {'name': 'Sauce Labs Onesie', 'description': "Rib snap infant onesie for the junior automation engineer in development. Reinforced 3-snap bottom closure, two-needle hemmed sleeved and bottom won't unr...</msg>
-<var>${expected}</var>
-<arg>${expected_items}</arg>
-<arg>${i}</arg>
-<doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.499200" elapsed="0.000153"/>
-</kw>
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-08-29T07:58:17.499598" level="DEBUG">GET http://localhost:54475/session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.24/text {}</msg>
-<msg time="2025-08-29T07:58:17.504038" level="DEBUG">http://localhost:54475 "GET /session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.24/text HTTP/1.1" 200 0</msg>
-<msg time="2025-08-29T07:58:17.504159" level="DEBUG">Remote response: status=200 | data={"value":"Sauce Labs Onesie"} | headers=HTTPHeaderDict({'Content-Length': '29', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
-<msg time="2025-08-29T07:58:17.504223" level="DEBUG">Finished Request</msg>
-<msg time="2025-08-29T07:58:17.504337" level="INFO">${name} = Sauce Labs Onesie</msg>
-<var>${name}</var>
-<arg>${names}[${i}]</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.499430" elapsed="0.004934"/>
-</kw>
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-08-29T07:58:17.504792" level="DEBUG">GET http://localhost:54475/session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.30/text {}</msg>
-<msg time="2025-08-29T07:58:17.509480" level="DEBUG">http://localhost:54475 "GET /session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.30/text HTTP/1.1" 200 0</msg>
-<msg time="2025-08-29T07:58:17.509667" level="DEBUG">Remote response: status=200 | data={"value":"Rib snap infant onesie for the junior automation engineer in development. Reinforced 3-snap bottom closure, two-needle hemmed sleeved and bottom won't unravel."} | headers=HTTPHeaderDict({'Content-Length': '171', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
-<msg time="2025-08-29T07:58:17.509725" level="DEBUG">Finished Request</msg>
-<msg time="2025-08-29T07:58:17.509823" level="INFO">${description} = Rib snap infant onesie for the junior automation engineer in development. Reinforced 3-snap bottom closure, two-needle hemmed sleeved and bottom won't unravel.</msg>
-<var>${description}</var>
-<arg>${descriptions}[${i}]</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.504522" elapsed="0.005329"/>
-</kw>
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-08-29T07:58:17.510226" level="DEBUG">GET http://localhost:54475/session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.36/text {}</msg>
-<msg time="2025-08-29T07:58:17.514378" level="DEBUG">http://localhost:54475 "GET /session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.36/text HTTP/1.1" 200 0</msg>
-<msg time="2025-08-29T07:58:17.514451" level="DEBUG">Remote response: status=200 | data={"value":"$7.99"} | headers=HTTPHeaderDict({'Content-Length': '17', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
-<msg time="2025-08-29T07:58:17.514501" level="DEBUG">Finished Request</msg>
-<msg time="2025-08-29T07:58:17.514575" level="INFO">${price} = $7.99</msg>
-<var>${price}</var>
-<arg>${prices}[${i}]</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.509990" elapsed="0.004606"/>
-</kw>
-<kw name="Should Be Equal" owner="BuiltIn">
-<msg time="2025-08-29T07:58:17.515127" level="DEBUG">Argument types are:
-&lt;class 'str'&gt;
-&lt;class 'str'&gt;</msg>
-<arg>${name}</arg>
-<arg>${expected['name']}</arg>
-<doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.514699" elapsed="0.000471"/>
-</kw>
-<kw name="Should Be Equal" owner="BuiltIn">
-<msg time="2025-08-29T07:58:17.515658" level="DEBUG">Argument types are:
-&lt;class 'str'&gt;
-&lt;class 'str'&gt;</msg>
-<arg>${description}</arg>
-<arg>${expected['description']}</arg>
-<doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.515279" elapsed="0.000421"/>
-</kw>
-<kw name="Should Be Equal" owner="BuiltIn">
-<msg time="2025-08-29T07:58:17.516490" level="DEBUG">Argument types are:
-&lt;class 'str'&gt;
-&lt;class 'str'&gt;</msg>
-<arg>${price}</arg>
-<arg>${expected['price']}</arg>
-<doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.515785" elapsed="0.000773"/>
-</kw>
-<var name="${i}">4</var>
-<status status="PASS" start="2025-08-29T07:58:17.499132" elapsed="0.017477"/>
-</iter>
-<iter>
-<kw name="Get From List" owner="Collections">
-<msg time="2025-08-29T07:58:17.516974" level="INFO">${expected} = {'name': 'Test.allTheThings() T-Shirt (Red)', 'description': 'This classic Sauce Labs t-shirt is perfect to wear when cozying up to your keyboard to automate a few tests. Super-soft and comfy ringspun...</msg>
-<var>${expected}</var>
-<arg>${expected_items}</arg>
-<arg>${i}</arg>
-<doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.516815" elapsed="0.000183"/>
-</kw>
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-08-29T07:58:17.517343" level="DEBUG">GET http://localhost:54475/session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.25/text {}</msg>
-<msg time="2025-08-29T07:58:17.523773" level="DEBUG">http://localhost:54475 "GET /session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.25/text HTTP/1.1" 200 0</msg>
-<msg time="2025-08-29T07:58:17.523894" level="DEBUG">Remote response: status=200 | data={"value":"Test.allTheThings() T-Shirt (Red)"} | headers=HTTPHeaderDict({'Content-Length': '45', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
-<msg time="2025-08-29T07:58:17.523953" level="DEBUG">Finished Request</msg>
-<msg time="2025-08-29T07:58:17.524055" level="INFO">${name} = Test.allTheThings() T-Shirt (Red)</msg>
-<var>${name}</var>
-<arg>${names}[${i}]</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.517099" elapsed="0.006980"/>
-</kw>
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-08-29T07:58:17.524475" level="DEBUG">GET http://localhost:54475/session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.31/text {}</msg>
-<msg time="2025-08-29T07:58:17.529522" level="DEBUG">http://localhost:54475 "GET /session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.31/text HTTP/1.1" 200 0</msg>
-<msg time="2025-08-29T07:58:17.529692" level="DEBUG">Remote response: status=200 | data={"value":"This classic Sauce Labs t-shirt is perfect to wear when cozying up to your keyboard to automate a few tests. Super-soft and comfy ringspun combed cotton."} | headers=HTTPHeaderDict({'Content-Length': '165', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
-<msg time="2025-08-29T07:58:17.529779" level="DEBUG">Finished Request</msg>
-<msg time="2025-08-29T07:58:17.529936" level="INFO">${description} = This classic Sauce Labs t-shirt is perfect to wear when cozying up to your keyboard to automate a few tests. Super-soft and comfy ringspun combed cotton.</msg>
-<var>${description}</var>
-<arg>${descriptions}[${i}]</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.524227" elapsed="0.005746"/>
-</kw>
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-08-29T07:58:17.530450" level="DEBUG">GET http://localhost:54475/session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.37/text {}</msg>
-<msg time="2025-08-29T07:58:17.536592" level="DEBUG">http://localhost:54475 "GET /session/966f726a50fe262da84dc6146f26d70f/element/f.9C27F9872C138210209706F9950CAD81.d.48D2903368FDE18EC335DC8992A4616E.e.37/text HTTP/1.1" 200 0</msg>
-<msg time="2025-08-29T07:58:17.536711" level="DEBUG">Remote response: status=200 | data={"value":"$15.99"} | headers=HTTPHeaderDict({'Content-Length': '18', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
-<msg time="2025-08-29T07:58:17.536766" level="DEBUG">Finished Request</msg>
-<msg time="2025-08-29T07:58:17.536883" level="INFO">${price} = $15.99</msg>
-<var>${price}</var>
-<arg>${prices}[${i}]</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.530176" elapsed="0.006733"/>
-</kw>
-<kw name="Should Be Equal" owner="BuiltIn">
-<msg time="2025-08-29T07:58:17.537518" level="DEBUG">Argument types are:
-&lt;class 'str'&gt;
-&lt;class 'str'&gt;</msg>
-<arg>${name}</arg>
-<arg>${expected['name']}</arg>
-<doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.537059" elapsed="0.000523"/>
-</kw>
-<kw name="Should Be Equal" owner="BuiltIn">
-<msg time="2025-08-29T07:58:17.538039" level="DEBUG">Argument types are:
-&lt;class 'str'&gt;
-&lt;class 'str'&gt;</msg>
-<arg>${description}</arg>
-<arg>${expected['description']}</arg>
-<doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.537679" elapsed="0.000403"/>
-</kw>
-<kw name="Should Be Equal" owner="BuiltIn">
-<msg time="2025-08-29T07:58:17.538545" level="DEBUG">Argument types are:
-&lt;class 'str'&gt;
-&lt;class 'str'&gt;</msg>
-<arg>${price}</arg>
-<arg>${expected['price']}</arg>
-<doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.538205" elapsed="0.000379"/>
-</kw>
-<var name="${i}">5</var>
-<status status="PASS" start="2025-08-29T07:58:17.516721" elapsed="0.021901"/>
-</iter>
-<var>${i}</var>
-<value>${c}</value>
-<status status="PASS" start="2025-08-29T07:58:17.428264" elapsed="0.110402"/>
-</for>
-<arg>${ITEMS}</arg>
-<arg>${USER_TYPE}[standard]</arg>
-<arg>${PASSWORD}</arg>
-<status status="PASS" start="2025-08-29T07:58:14.797299" elapsed="2.741445"/>
+<status status="PASS" start="2025-09-09T12:50:13.882981" elapsed="0.000212"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
-<msg time="2025-08-29T07:58:17.539183" level="DEBUG">Closing browser with session id 966f726a50fe262da84dc6146f26d70f.</msg>
-<msg time="2025-08-29T07:58:17.539296" level="DEBUG">DELETE http://localhost:54475/session/966f726a50fe262da84dc6146f26d70f {}</msg>
-<msg time="2025-08-29T07:58:17.565474" level="DEBUG">http://localhost:54475 "DELETE /session/966f726a50fe262da84dc6146f26d70f HTTP/1.1" 200 0</msg>
-<msg time="2025-08-29T07:58:17.565671" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
-<msg time="2025-08-29T07:58:17.565748" level="DEBUG">Finished Request</msg>
+<msg time="2025-09-09T12:50:13.883416" level="DEBUG">Closing browser with session id 4308d00e06a1f84c45893e46823122a4.</msg>
+<msg time="2025-09-09T12:50:13.883495" level="DEBUG">DELETE http://localhost:63740/session/4308d00e06a1f84c45893e46823122a4 {}</msg>
+<msg time="2025-09-09T12:50:13.913671" level="DEBUG">http://localhost:63740 "DELETE /session/4308d00e06a1f84c45893e46823122a4 HTTP/1.1" 200 0</msg>
+<msg time="2025-09-09T12:50:13.913806" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-09-09T12:50:13.913866" level="DEBUG">Finished Request</msg>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-08-29T07:58:17.539079" elapsed="2.097268"/>
+<status status="PASS" start="2025-09-09T12:50:13.883342" elapsed="2.117054"/>
 </kw>
-<tag>standard_user</tag>
-<tag>validation</tag>
-<status status="PASS" start="2025-08-29T07:58:14.796609" elapsed="4.839999"/>
+<tag>sanity</tag>
+<status status="PASS" start="2025-09-09T12:50:09.373988" elapsed="6.626519"/>
 </test>
-<status status="PASS" start="2025-08-29T07:58:14.538848" elapsed="5.098463"/>
+<status status="PASS" start="2025-09-09T12:50:09.034677" elapsed="6.966332"/>
 </suite>
 <statistics>
 <total>
 <stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">standard_user</stat>
-<stat pass="1" fail="0" skip="0">validation</stat>
+<stat pass="1" fail="0" skip="0">sanity</stat>
 </tag>
 <suite>
-<stat name="Test Inventory" id="s1" pass="1" fail="0" skip="0">Test Inventory</stat>
+<stat name="Test Sanity" id="s1" pass="1" fail="0" skip="0">Test Sanity</stat>
 </suite>
 </statistics>
 <errors>

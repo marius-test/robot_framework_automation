@@ -1,5 +1,6 @@
 *** Settings ***
 Resource    ../resources/variables.resource
+Resource    ../resources/expected_values.resource
 Library    SeleniumLibrary
 Library    Collections
 
@@ -15,6 +16,21 @@ login
     Input Text    ${USERNAME_FIELD}    ${username}
     Input Text    ${PASSWORD_FIELD}    ${password}
     Click Button    ${LOGIN_BUTTON}
+
+login should succeed
+    [Arguments]    ${user_key}    ${password}=${PASSWORD}
+    # TODO implement the user handling logic here
+    login             ${username}    ${password}
+    Wait Until Element Is Visible    ${APP_LOGO}    timeout=${DEFAULT_TIMEOUT}
+    ${actual_app_logo_text}=    Get Text    ${APP_LOGO}
+    Should Be Equal    ${APP_LOGO_TEXT}    ${actual_app_logo_text}
+
+login should fail
+    [Arguments]    ${user_key}    ${password}=${PASSWORD}
+    # TODO implement the user handling logic here
+    login             ${username}    ${password}
+    Wait Until Element Is Visible    ${ERROR_CONTAINER}    timeout=${DEFAULT_TIMEOUT}
+    Page Should Contain Element    ${ERROR_CONTAINER}
 
 open inventory page
     [Arguments]    ${username}    ${password}

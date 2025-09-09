@@ -1,1 +1,1 @@
-robot -d output --loglevel DEBUG tests/test_inventory.robot
+robot -d output --loglevel DEBUG tests/test_sanity.robot
